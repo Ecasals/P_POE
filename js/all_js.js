@@ -372,6 +372,7 @@ document.getElementById("exit_icon").onclick = function () {
         document.getElementById("clue_2_on").style.display = "block";
         document.getElementById("clue_2_shine").style.display = "none";
         document.getElementById("i_corb_c").className = "i_corb_off";
+        document.getElementById("i_corb").className = "i_corb_off";
     }
     
     if (document.getElementById("exit_icon").className === "exit_icon_so") {
