@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Escena_1</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="604800" />
+    <link rel=stylesheet href=css/e1/e1_basics.css>
+    <link rel=stylesheet href=css/e1/water_s.css>
+    <link rel=stylesheet href=css/e1/e1_static_items.css>
+    <link rel=stylesheet href=css/e1/e1_dinamic_items.css>
+    <link rel=stylesheet href=css/e1/rat.css>
+    <link rel=stylesheet href=css/e1/back_imgs.css>
+    <link rel=stylesheet href=css/c1/c1_basics.css>
+    <link rel=stylesheet href=css/start.css>
+    <link rel=stylesheet href=css/scene_change.css>
+    <link rel="icon" href="data:,"> </head>
+
+<body id=main_body>
+    <div id=exit_icon_ops class=exit_icon_ops_d></div>
+    <div id="loadpage">
+        <div id=load_water></div>
+        <div id=load_water_d></div>
+        <div id=light_lh></div>
+        <div id="dp_s"></div>
+        <div id="dp_s_2"></div>
+        <div id="dp_s_3"></div>
+        <div id="go" class="go"></div>
+    </div>
+    <div id="start">
+        <div id="timo_s"></div>
+        <div id="timo_s_2"></div>
+        <div id="endincet"></div>
+        <div id="endincet_a"></div>
+        <div id="rp_face_s" class="rp_face_s"></div>
+        <div id="op_bar"></div>
+        <div id="op_bar_b">
+            <div id="op_bar_i" class="op_bar_i"></div>
+            <div id="op_bar_ig" class="op_bar_ig"></div>
+            <div id="op_bar_i_m" class="op_bar_i_m"></div>
+            <div id="op_bar_g" class="op_bar_g"></div>
+            <div id="op_bar_gg" class="op_bar_gg"></div>
+            <div id="op_bar_g_m" class="op_bar_g_m"></div>
+            <div id="op_bar_o" class="op_bar_o"></div>
+            <div id="op_bar_og" class="op_bar_og"></div>
+            <div id="op_bar_o_m" class="op_bar_o_m"></div>
+            <div id="op_bar_c" class="op_bar_c"></div>
+            <div id="op_bar_cg" class="op_bar_cg"></div>
+            <div id="op_bar_c_m" class="op_bar_c_m">
+                <div id="s_confi_b" >
+                <div id="blc" class="blc"></div>
+                <div id="ble" class="ble"></div>
+                <div id="bli" class="bli"></div>
+                <div id="blf" class="blf"></div>
+                <div id="cdb" class="cdb_on"></div>
+                <div id="ba" class="ba_on"></div>
+                <div id="bm" class="bm_on"></div>
+                <div id="bd" class="bd_on"></div>
+                </div>
+                <div id="s_confi">
+                <input id="confi_n" class="confi_n" type="text" onfocus="this.value=''" value="Eumo" maxlength="10" onblur="clearText()" >
+                <input id="confi_pc" class="confi_pc" type="text" onfocus="this.value=''" value="Disseny" maxlength="15">
+                <input id="confi_sc" class="confi_sc" type="text" onfocus="this.value=''" value="Comunicació"maxlength="15">
+                <input id="confi_alies" class="confi_alies" type="text" onfocus="this.value=''" value="Eumo_DC" maxlength="10">
+                <input id="confi_mail" class="confi_mail" type="text" onfocus="this.value=''" value="info@emuodc.cat" maxlength="25">
+                <input id="confi_ce" class="confi_ce" type="text" onfocus="this.value=''" value="Universitat de Vic" maxlength="50">
+                <select id="confi_c" class="confi_c" type="text" value="Curs" maxlength="15">
+                        <option value="1r d'ESO">1r d'ESO
+                        <option value="2n d'ESO">2n d'ESO
+                        <option value="3r d'ESO">3r d'ESO
+                        <option value="4rt d'ESO">4rt d'ESO
+                        <option value="1r de Batxillerat">1r de Batxillerat
+                        <option value="2n de Batxillerat">2n de Batxillerat
+                        <option value="Altres">Altres
+                    </select>
+                <input id="confi_g" class="confi_g" type="text" onfocus="this.value=''" value="A" maxlength="10">
+                <input id="confi_ns" class="confi_ns" type="text" onfocus="this.value=''" value="Grumets_04" maxlength="10">
+                <input id="confi_contra" class="confi_contra" type="password" onfocus="this.value=''" value="eumoopin" maxlength="50">
+                <textarea id="confi_ov" class="confi_ov"  type="text" onfocus="this.value=''" maxlength="150" >Escriu aquí...</textarea>
+                <textarea id="confi_op" class="confi_op" type="text" onfocus="this.value=''" maxlength="90" cols="40" rows="5">Proposta debat...</textarea>
+                </div>
+                </div>
+            <div id="op_bar_d" class="op_bar_d"></div>
+            <div id="op_bar_dg" class="op_bar_dg"></div>
+            <div id="op_bar_d_m" class="op_bar_d_m">
+                <div id="ob_d_back" class="ob_d_back"></div>
+                <div id="ob_d_atoms" class="ob_d_atoms"></div>
+                <div id="ob_d_atoms_click" class="ob_d_atoms_click"></div>
+                <div id="ob_d_avelles" class="ob_d_avelles"></div>
+                <div id="ob_d_avelles_click" class="ob_d_avelles_click"></div>
+                <div id="ob_d_nutri" class="ob_d_nutri"></div>
+                <div id="ob_d_nutri_click" class="ob_d_nutri_click"></div>
+                <div id="ob_d_idiomes" class="ob_d_idiomes"></div>
+                <div id="ob_d_idiomes_click" class="ob_d_idiomes_click"></div>
+            </div>
+        </div>
+    </div>
+    <div id=scene_change class=scene_change>
+        <div id="sc_ancla" class="sc_ancla"></div>
+        <div id="sc_aura" class="sc_aura"></div>
+        <div id="sc_corda" class="sc_corda"></div>
+        <div id="sc_clic_c1" class="sc_clic_c1"></div>
+    </div>
+    <div id="intro" class="intro">
+        <div id=background class=off_back></div>
+        <div id=background_p class=main_back_p></div>
+        <div id=background_ipm class="background_ipm"></div>
+        <div id=RP_start class=RP_anm></div>
+        <div id=RP_face class=RP_face></div>
+        <div id=RP_face_2 class=RP_face_2></div>
+        <div id=RP_pirate_glow class=RP_pirate_glow></div>
+        <div id=RP_tiger_glow class=RP_tiger_glow></div>
+        <div id=JOE_start class=JOE_anm></div>
+        <div id=joe_sound class=joe_sound></div>
+        <!-- PROPS INTRO -->
+        <div id="props" class=props_show>
+            <div id=chair class=chair></div>
+            <div id="i_corb" class="i_corb_off" ></div>
+            <div id="i_corb_c" class="i_corb_c"></div>
+            <div id="desk_anm_1"></div>
+            <div id="desk_anm_2"></div>
+            <div id="desk_anm_3"></div>
+            <div id="desk_anm_4"></div>
+            <div id="desk_anm_5"></div>
+            <div id="desk_anm_left"></div>
+            <div id="desk_anm_right"></div>
+            <div id="desk_fbook_anm"></div>
+            <div id=desk>
+                <div id="desk_c_1" class=desk_c_1></div>
+                <div id="desk_c_2" class=desk_c_2></div>
+                <div id="desk_c_3" class=desk_c_3></div>
+                <div id="desk_c_4" class=desk_c_4></div>
+                <div id="desk_c_5" class=desk_c_5></div>
+                <div id="desk_c_left" class=desk_left></div>
+                <div id="desk_fbook" class=desk_fbook></div>
+                <div id="desk_c_right" class=desk_right></div>
+            </div>
+            <div id=couch></div>
+            <div id=float></div>
+            <div id=row></div>
+            <div id=horse></div>
+            <div id=ropes></div>
+            <div id=flags></div>
+            <div id=flags_large></div>
+            <div id=ship></div>
+            <div id=earth>
+                <div id="earth_anm" class="earth_anm"></div>
+            </div>
+            <div id="earth_anm_c" class="earth_anm_c"></div>
+            <div id=lamp_anm class=lamp_anm></div>
+            <div id=lamp_darck class=lamp_darck></div>
+            <div id=lamp class="lamp_shape"></div>
+            <div id=window_all class="window_all" class="zoomTarget">
+                <div id=window_fe class="window_fe_close"></div>
+                <div id=window_fe_back></div>
+                <div id=window_fe_lh></div>
+                <div id=window_fe_lh_light></div>
+                <div id=window_fe_shadow></div>
+                <div class=water_s></div>
+                <div class=water_u></div>
+            </div>
+            <div id=window_anm class="window_anm"></div>
+            <div id=window_anm_2 class="window_anm_2"></div>
+            <div id=rat></div>
+            <div id=cup></div>
+            <div id=timo></div>
+            <div id=megafon></div>
+            <div id=sea_shell></div>
+            <div id=sea_shell_sound></div>
+            <div id=shell></div>
+            <div id=anafora></div>
+            <div id=politja_larg></div>
+            <div id=smoke class=smoke></div>
+            <div id=book_bell></div>
+            <div id=book_bell_s></div>
+            <div id=book_floor></div>
+            <div id=book_desk></div>
+            <div id=sextant></div>
+        </div>
+        <div id="texts">
+            <div id=text_cub_1 class=text_1_anm></div>
+            <div id=text_rp_3 class=text_rp_3_up></div>
+            <div id=text_rp_8 class=text_rp_8_up></div>
+            <div id=text_rp_9 class=text_rp_9_up></div>
+            <div id=text_rp_10 class=text_rp_10_up></div>
+            <div id=text_rp_11 class=text_rp_11_up></div>
+            <div id=text_rp_12 class=text_rp_12_up></div>
+            <div id=text_rp_13 class=text_rp_13_up></div>
+            <div id=text_rp_14 class=text_rp_14_up></div>
+            <div id=text_rp_15 class=text_rp_15_up></div>
+            <div id=text_joe_2 class=text_2_anm></div>
+            <div id=text_joe_4 class=text_joe_4_up></div>
+            <div id=text_rp_e2 class=text_rp_e2_start></div>
+            <div id=text_joe_5 class=text_joe_5_up></div>
+            <div id=text_joe_6 class=text_joe_6_up></div>
+            <div id=text_joe_7 class=text_joe_7_up></div>
+            <div id=text_joe_8 class=text_joe_8_up></div>
+            <div id=text_joe_9 class=text_joe_9_up></div>
+            <div id=text_joe_10 class=text_joe_10_up></div>
+            <div id=text_joe_11 class=text_joe_11_up></div>
+            <div id=text_joe_12 class=text_joe_12_up></div>
+            <div id=text_joe_13 class=text_joe_13_up></div>
+        </div>
+        <div id=back_imgs class=back_imgs>
+            <div id=back_img_1 class=back_img_1></div>
+        </div>
+        <div id=arthur_g class=arthur_anm>
+            <div id=arthur_img_1 class=arthur_img_1_s></div>
+            <div id=arthur_img_2 class=arthur_img_2_s></div>
+            <div id=img_back_1_ag class=img_back_s_1_ag></div>
+            <div id=img_size_icon_1_ag class=img_size_1_s_ag></div>
+            <div id=img_back_2_ag class=img_back_s_2_ag></div>
+            <div id=img_size_icon_2_ag class=img_size_2_s_ag></div>
+            <div id=exit_icon class=exit_icon_s></div>
+            <div id=table_arthur_text class="table_arthur_text">
+                <h1>La narración <br> de Arthur Gordon Pym</h1>
+                <p>El protagonista, Arthur Gordon Pym, se embarca clandestinamente en el barco ballenero Grampus. Tras muchas experiencias y desgracias (motines, naufragios, canibalismo, guerras con nativos) que ponen en riesgo su vida, se interna en parajes prodigiosos de los mares antárticos, hasta que sufre una sobrecogedora revelación con la que culmina la historia.</p>
+                <p>La narración de Arthur Gordon Pym es una de las obras más controvertidas, extrañas y enigmáticas de su autor, contándose entre los excelentes títulos poeanos de tema marinero, junto a Manuscrito encontrado en una botella, La caja oblonga y Un descenso al Maelström. Se trata de una novela de aventuras de tipo episódico, centrada muy directamente en el intrépido protagonista que le da título, personaje que encontraría eco posteriormente en las obras de Robert Louis Stevenson (Secuestrado, La isla del tesoro, Los hombres alegres, etc.).</p>
+                <p>En esta obra, Poe, a bordo del Grampus, se deja llevar en alas de su desenfrenada imaginación a regiones mentales y literarias que nunca antes había hollado —de ahí el absorbente interés que han mostrado por la pieza desde los escritores surrealistas hasta los psicoanalistas literarios de toda condición—. La fantástica peripecia se desborda en manos del autor, tanto que apenas da respiro al lector entre secuencia y secuencia (la acción apenas articula tiempos muertos de enlace), cosa que se ha achacado al autor como defecto estructural.</p>
+            </div>
+        </div>
+        <div id=vida_pi class=pi_anm>
+            <div id=pi_img_1 class=arthur_img_1_s></div>
+            <div id=img_back_1_pi class=img_back_s_1_ag></div>
+            <div id=img_size_icon_1_pi class=img_size_1_s_ag></div>
+            <div id=exit_icon_pi class=exit_icon_s></div>
+            <div id=table_arthur_text class="table_arthur_text">
+                <h1>La vida de Pi</h1>
+                <p>La vida de Pi es una novela de aventuras escrita por el canadiense Yann Martel. En la historia, el protagonista Piscine “Pi” Molitor Patel (en honor a "Piscine Molitor", una piscina pública de París), un joven de la India, de Pondicherry, indaga sobre la religión, espiritualidad y lo factible desde una edad temprana, y sobrevive 227 días en un bote junto con un tigre de Bengala después del naufragio de su barco en el océano Pacífico. El libro presenta la vida de Pi como una historia real contada al autor por un indio llamado Pi Patel. En la novela el propio autor conoce al protagonista mientras estaba buscando inspiración para una nueva novela sobre Portugal. Supuestamente tras conocer a Pi Patel, abandona la novela sobre Portugal y se centra en la historia de este.</p>
+                <p>La novela fue rechazada por al menos cinco casas editoriales de Londres1 antes de ser aceptada por Knopf Canada, que la publicó en septiembre de 2001. La edición de Reino Unido ganó el Premio Booker al año siguiente234 Fue también candidata a los Canada Reads 2003 de CBC Radio, donde fue defendida por la autora Nancy Lee.5 La traducción al francés fue elegida en la versión francesa del concurso Le combat des livres, donde fue defendida por Louise Forestier6 La novela ganó el Boeke Prize, un premio de novela de Sudáfrica, en 2003. En 2004, ganó el Asian Pacific American Award for Literature como mejor ficción para adultos de los años 2001-2037 Fue llevada a la pantalla como Life of Pi por Ang Lee en noviembre de 2012.</p>
+            </div>
+        </div>
+        <div id=audios class=audios>
+            <audio id=main_theme_e1 infinite>
+                <source src=media/Sounds/ocea_waves.mp3 type=audio/mp3> </audio>
+            <audio id=xat_auidio>
+                <source src=media/Sounds/xat_sound.mp3 type=audio/mp3> </audio>
+            <audio id=discovery_auidio>
+                <source src=media/Sounds/found_sound.mp3 type=audio/mp3> </audio>
+            <audio id=joe_cough>
+                <source src=media/Sounds/joe_coughing.wav type=audio/mp3> </audio>
+            <audio id=rat_sound>
+                <source src=media/Sounds/rat_soud.wav type=audio/wav> </audio>
+            <audio id=light_sound>
+                <source src=media/Sounds/light_turn.wav type=audio/wav> </audio>
+            <audio id=drawer_sound>
+                <source src=media/Sounds/open_drawer.mp3 type=audio/mp3> </audio>
+            <audio id=conch_sound>
+                <source src=media/Sounds/conch_sound.mp3 type=audio/mp3> </audio>
+            <audio id=bell>
+                <source src=media/Sounds/Ding-sound-three-times.mp3 type=audio/mp3> </audio>
+        </div>
+    </div>
+    <div id="cap_1" class="cap_1_up">
+        <!-- PROPS C1 -->
+        <div id=props_c1>
+            <div id=background_c1 class=main_back_c1></div>
+            <div id="c1_lh_all" class="c1_lh_all">
+                <div id="c1_lh" class="c1_lh"></div>
+                <div id="c1_lh_house" class="c1_lh_house"></div>
+                <div id="c1_lh_wind" class="c1_lh_wind"></div>
+                <div id="c1_lh_click" class="c1_lh_click"></div>
+                <div id="c1_lh_dock" class="c1_lh_dock"></div>
+                <div id="c1_lh_dock_s" class="c1_lh_dock_s"></div>
+                <div id="c1_boat" class="c1_boat"></div>
+            </div>
+            <div id="c1_water_all" class="c1_water_all">
+                <div id="c1_water_top" class="c1_water_top_m"></div>
+                <div id="c1_water_higger" class="c1_water_higger_m"> </div>
+                <div id="c1_water_mid" class="c1_water_mid_m"> </div>
+                <div id="c1_water_down" class="c1_water_down_m"> </div>
+                <div id="c1_dofi_petit" class="c1_dofi_petit"> </div>
+                <div id="c1_dofi_mitg" class="c1_dofi_mitg"> </div>
+                <div id="c1_dofi_gran" class="c1_dofi_gran"> </div>
+            </div>
+            <div id="c1_ship" class="c1_ship"></div>
+            <div id="c1_ship_glow" class="c1_ship_glow"></div>  
+            <div id="c1_ship_click" class="c1_ship_click"></div>
+            <div id="c1_ship_anm" class="c1_ship_anm"></div>
+            
+            <div id="c1_seagulls" class="c1_seagulls"></div>
+            <div id="c1_seagulls_2" class="c1_seagulls_2"></div>
+            <div id="wind_table" class="wind_table">
+                <div id="wind_table_ex" class="wind_table_ex"></div>
+            </div>
+            <div id="ship_table" class="ship_table">
+                <div id="st_av">
+                    <input id="st_v_v" type="text" onfocus="this.value=''" value="">
+                    <button id="c1_v_button" onclick="st_v_vb()">2</button>
+                </div>
+                <div id="st_ac">
+                    <input id="st_v_c" type="text" onfocus="this.value=''" value="">
+                    <button id="c1_c_button" onclick="st_c_cb()">1</button>
+                </div>            
+                <div id="ship_table_ex" class="ship_table_ex"></div>
+                <div id="shadow_st" class="shadow_st"></div>
+                <div id="rope_stable" class="rope_stable"></div>
+                <div id="c1_b_v_up" class="c1_b_v_up"></div>
+                <div id="c1_b_v_on" class="c1_b_v_on"></div>
+                <div id="c1_b_c_up" class="c1_b_c_up"></div>
+                <div id="c1_b_c_on" class="c1_b_c_on"></div>
+                <div id="c1_b_v_o" class="c1_b_v_o"></div>
+                <div id="c1_b_c_o" class="c1_b_c_o"></div>
+                <div id="c1_b_v_s" class="c1_b_v_s"></div>
+                <div id="c1_b_c_s" class="c1_b_c_s"></div>
+            </div>
+            <div id="ship_click">
+            <img src="media/IMG/c1/backs/back.png" opacity="0" width="1024" height="678" usemap="#ship">
+                <map name="ship" id="ship">
+                    <area alt="" title="" href="#" shape="poly" onclick="sp_c()" coords="323,57,281,148,222,260,175,270,171,298,219,295,232,327,187,491,206,522,618,523,639,503,819,473,496,156,461,186" />
+                </map></div>
+            
+        </div>
+    </div>
+    <div id="low_bar">
+        <div id=low_control_bar></div>
+        <div id=low_control_bar_2 class=low_control_bar_2></div>
+        <div id=clues>
+            <div id="fbook" class="fbook"></div>
+            <div id="fbook_back" class="fbook_back"></div>
+            <div id=clue_1 class=game_clue_1></div>
+            <div id=clue_1_on class=game_clue_1_on></div>
+            <div id=clue_1_shine class=game_clue_1_shine></div>
+            <div id=clue_2 class=game_clue_2></div>
+            <div id=clue_2_on class=game_clue_2_on></div>
+            <div id=clue_2_shine class=game_clue_2_shine></div>
+            <div id=clue_3 class=game_clue_3></div>
+            <div id=clue_3_on class=game_clue_3_on></div>
+            <div id=clue_3_shine class=game_clue_3_shine></div>
+            <div id=clue_4 class=game_clue_4></div>
+            <div id=clue_4_on class=game_clue_4_on></div>
+            <div id=clue_4_shine class=game_clue_4_shine></div>
+            <div id=clue_5 class=game_clue_5></div>
+            <div id=clue_5_on class=game_clue_5_on></div>
+            <div id=clue_5_shine class=game_clue_5_shine></div>
+            <div id=clue_6 class=game_clue_6></div>
+            <div id=clue_6_on class=game_clue_6_on></div>
+            <div id=clue_6_shine class=game_clue_6_shine></div>
+            <div id=clue_7 class=game_clue_7></div>
+            <div id=clue_7_on class=game_clue_7_on></div>
+            <div id=clue_7_shine class=game_clue_7_shine></div>
+            <div id=clue_8 class=game_clue_8></div>
+            <div id=clue_8_on class=game_clue_8_on></div>
+            <div id=clue_8_shine class=game_clue_8_shine></div>
+            <div id=clue_9 class=game_clue_9></div>
+            <div id=clue_9_on class=game_clue_9_on></div>
+            <div id=clue_9_shine class=game_clue_9_shine></div>
+            <div id=clue_10 class=game_clue_10></div>
+            <div id=clue_10_on class=game_clue_10_on></div>
+            <div id=clue_10_shine class=game_clue_10_shine></div>
+        </div>
+        <div id=game_compass class="game_compass"></div>
+        <div id=game_ancla class="game_ancla"></div>
+        <div id=game_opinio class="game_opinio"></div>
+        <div id=close_button class="close_button"></div>
+        <div id=house_button class="house_button"></div>
+        <div id="inf_button" class="inf_button"></div>
+        <div id="confi_button" class="confi_button"></div>
+        <div id="down_button" class="down_button"></div>
+        <div id=des_index></div>
+    </div>
+    <div id="op_bar_g_s" class="op_bar_g_s"></div>
+    <div id="op_bar_o_s" class="op_bar_o_s_phone"></div>
+    <div id="op_bar_i_s" class="op_bar_i_s"></div>
+    <div id="op_bar_c_s" class="op_bar_c_s">
+        <div id="s_confi_gb" >
+                <div id="blc" class="blc"></div>
+                <div id="ble" class="ble"></div>
+                <div id="bli" class="bli"></div>
+                <div id="blf" class="blf"></div>
+                <div id="cdbg" class="cdb_on"></div>
+                <div id="cdbg" class="cdb_on"></div>
+                <div id="bag" class="ba_on"></div>
+                <div id="bmg" class="bm_on"></div>
+                <div id="bdg" class="bd_on"></div>
+            </div>
+        <div id="s_confi_g">
+                <input id="confi_gn" class="confi_n" type="text" onfocus="this.value=''" value="Eumo" maxlength="10">
+                <input id="confi_gpc" class="confi_pc" type="text" onfocus="this.value=''" value="Disseny" maxlength="15">
+                <input id="confi_gsc" class="confi_sc" type="text" onfocus="this.value=''" value="Comunicació"maxlength="15">
+                <input id="confi_galies" class="confi_alies" type="text" onfocus="this.value=''" value="Eumo_DC" maxlength="10">
+                <input id="confi_gmail" class="confi_mail" type="text" onfocus="this.value=''" value="info@emuodc.cat" maxlength="25">
+                <input id="confi_gce" class="confi_ce" type="text" onfocus="this.value=''" value="Universitat de Vic" maxlength="50">
+                <select id="confi_gc" class="confi_c" type="text" value="Curs" maxlength="15">
+                        <option value="1r d'ESO">1r d'ESO
+                        <option value="2n d'ESO">2n d'ESO
+                        <option value="3r d'ESO">3r d'ESO
+                        <option value="4rt d'ESO">4rt d'ESO
+                        <option value="1r de Batxillerat">1r de Batxillerat
+                        <option value="2n de Batxillerat">2n de Batxillerat
+                        <option value="Altres">Altres
+                    </select>
+                <input id="confi_gg" class="confi_g" type="text" onfocus="this.value=''" value="A" maxlength="10">
+                <input id="confi_gns" class="confi_ns" type="text" onfocus="this.value=''" value="Grumets_04" maxlength="10">
+                <input id="confi_gcontra" class="confi_contra" type="password" onfocus="this.value=''" value="eumoopin" maxlength="50">
+                <input id="confi_gov" class="confi_ov"  type="text" onfocus="this.value=''" value="Escriu aquí..."> 
+                <input id="confi_gop" class="confi_op" type="text" onfocus="this.value=''" value="Proposta debat..."  size="120">
+                </div>
+                </div>
+    </div>
+    <div id="op_bar_d_s" class="op_bar_d_s"></div>
+    <div id="op_bar_a_s" class="op_bar_a_s"></div>
+    <div id=arthur_gc class=arthur_anm>
+        <div id=arthur_gc_img_1 class=arthur_img_1_s></div>
+        <div id=arthur_gc_img_2 class=arthur_img_2_s></div>
+        <div id=img_back_1_gc class=img_back_s_1_ag></div>
+        <div id=img_size_icon_1_gc class=img_size_1_s_ag></div>
+        <div id=img_back_2_gc class=img_back_s_2_ag></div>
+        <div id=img_size_icon_2_gc class=img_size_2_s_ag></div>
+        <div id=exit_icon_gc class=exit_icon_s></div>
+        <div id=table_arthur_text class="table_arthur_text">
+            <h1>La narración <br> de Arthur Gordon Pym</h1>
+            <p>El protagonista, Arthur Gordon Pym, se embarca clandestinamente en el barco ballenero Grampus. Tras muchas experiencias y desgracias (motines, naufragios, canibalismo, guerras con nativos) que ponen en riesgo su vida, se interna en parajes prodigiosos de los mares antárticos, hasta que sufre una sobrecogedora revelación con la que culmina la historia.</p>
+            <p>La narración de Arthur Gordon Pym es una de las obras más controvertidas, extrañas y enigmáticas de su autor, contándose entre los excelentes títulos poeanos de tema marinero, junto a Manuscrito encontrado en una botella, La caja oblonga y Un descenso al Maelström. Se trata de una novela de aventuras de tipo episódico, centrada muy directamente en el intrépido protagonista que le da título, personaje que encontraría eco posteriormente en las obras de Robert Louis Stevenson (Secuestrado, La isla del tesoro, Los hombres alegres, etc.).</p>
+            <p>En esta obra, Poe, a bordo del Grampus, se deja llevar en alas de su desenfrenada imaginación a regiones mentales y literarias que nunca antes había hollado —de ahí el absorbente interés que han mostrado por la pieza desde los escritores surrealistas hasta los psicoanalistas literarios de toda condición—. La fantástica peripecia se desborda en manos del autor, tanto que apenas da respiro al lector entre secuencia y secuencia (la acción apenas articula tiempos muertos de enlace), cosa que se ha achacado al autor como defecto estructural.</p>
+        </div>
+    </div>
+    <div id=vida_pi_c class=pi_anm>
+        <div id=pi_img_1_c class=arthur_img_1_s></div>
+        <div id=img_back_1_pi_c class=img_back_s_1_ag></div>
+        <div id=img_size_icon_1_pi_c class=img_size_1_s_ag></div>
+        <div id=exit_icon_pi_c class=exit_icon_s></div>
+        <div id=table_arthur_text class="table_arthur_text">
+            <h1>La vida de Pi</h1>
+            <p>La vida de Pi es una novela de aventuras escrita por el canadiense Yann Martel. En la historia, el protagonista Piscine “Pi” Molitor Patel (en honor a "Piscine Molitor", una piscina pública de París), un joven de la India, de Pondicherry, indaga sobre la religión, espiritualidad y lo factible desde una edad temprana, y sobrevive 227 días en un bote junto con un tigre de Bengala después del naufragio de su barco en el océano Pacífico. El libro presenta la vida de Pi como una historia real contada al autor por un indio llamado Pi Patel. En la novela el propio autor conoce al protagonista mientras estaba buscando inspiración para una nueva novela sobre Portugal. Supuestamente tras conocer a Pi Patel, abandona la novela sobre Portugal y se centra en la historia de este.</p>
+            <p>La novela fue rechazada por al menos cinco casas editoriales de Londres1 antes de ser aceptada por Knopf Canada, que la publicó en septiembre de 2001. La edición de Reino Unido ganó el Premio Booker al año siguiente234 Fue también candidata a los Canada Reads 2003 de CBC Radio, donde fue defendida por la autora Nancy Lee.5 La traducción al francés fue elegida en la versión francesa del concurso Le combat des livres, donde fue defendida por Louise Forestier6 La novela ganó el Boeke Prize, un premio de novela de Sudáfrica, en 2003. En 2004, ganó el Asian Pacific American Award for Literature como mejor ficción para adultos de los años 2001-2037 Fue llevada a la pantalla como Life of Pi por Ang Lee en noviembre de 2012.</p>
+        </div>
+    </div>
+    <div id="wind_table_c" class="wind_table_c">
+                <div id="wind_table_ex_c" class="wind_table_ex_c"></div>
+    <div id=js class=js>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src=js/jqlibas.js></script>
+        <script src=js/jqlibgo.js></script>
+        <script src=js/all_js.js></script>
+        <script src=js/img_size.js></script>
+        <script src=js/load_set.js></script>
+        <script src=js/c1_anm.js></script>
+        <script src=js/sc.js></script>
+        <script src=js/sc.js></script>
+    </div>
+</body>
+
+</html>
