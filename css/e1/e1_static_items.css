@@ -1,0 +1,84 @@
+#desk{background-image:url(../../media/IMG/props/desk.png);position:fixed;top:54.6%;left:-2.5%;background-size:contain;background-repeat:no-repeat;z-index:1;width:37%;height:32%}
+.chair{background-image:url(../../media/IMG/props/cahir.png);position:fixed;top:53%;left:37.4%;background-size:contain;background-repeat:no-repeat;z-index:1;width:12%;height:31%}
+.i_corb_off{background-image:url(../../media/IMG/props/corb_off.png);position:fixed;top:33.1%;left:21.4%;background-size:contain;background-repeat:no-repeat;z-index:1;width:12%;height:22%}
+.i_corb_c{display: none; position:fixed;top:33.1%;left:23.4%;background-size:contain;background-repeat:no-repeat;z-index:6;width:9%;height:22%;border-top-left-radius: 40%;border-top-right-radius: 40%;}
+.i_corb_on{background-image:url(../../media/IMG/props/corb_on.png);position:fixed;top:6.5%;left:21.4%;background-size:contain;background-repeat:no-repeat;z-index:5;width:55.9%;height:49%;}
+.chair_ipm{background-image:url(../../media/IMG/props/cahir_ipm.png);position:fixed;top:53%;left:36%;background-size:contain;background-repeat:no-repeat;z-index:1;width:15%;height:31%}  
+.chair_e3{background-image:url(../../media/IMG/props/cahir_ipm.png);position:fixed;top:53%;left:39%;background-size:contain;background-repeat:no-repeat;z-index:1;width:15%;height:32%}
+/*#couch{background-image:url(../../media/IMG/props/couch.png);position:fixed;top:46%;left:64%;background-size:contain;background-repeat:no-repeat;z-index:1;width:33%;height:38%}
+#row{background-image:url(../../media/IMG/props/row.png);position:fixed;top:20%;left:33%;background-size:contain;background-repeat:no-repeat;z-index:0;width:5%;height:63%}
+#float{background-image:url(../../media/IMG/props/float.png);position:fixed;top:57%;left:56%;background-size:contain;background-repeat:no-repeat;z-index:0;width:19%;height:24%}
+#horse{background-image:url(../../media/IMG/props/horse_wall.png);position:fixed;top:2%;left:80.5%;background-size:contain;background-repeat:no-repeat;z-index:0;width:27%;height:50%}
+#ropes{background-image:url(../../media/IMG/props/ropes.png);position:fixed;top:-2%;left:-2.5%;background-size:contain;background-repeat:no-repeat;z-index:-1;width:51%;height:39%}
+#flags{background-image:url(../../media/IMG/props/flags.png);position:fixed;top:-5%;left:-2.5%;background-size:contain;background-repeat:no-repeat;z-index:0;width:25%;height:23%;-webkit-transform: rotateZ(5deg);-moz-transform: rotateZ(5deg);transform: rotateZ(5deg);}
+#flags_large{background-image:url(../../media/IMG/props/flags_larg.png);position:fixed;top:-3%;left:-2.5%;background-size:contain;background-repeat:no-repeat;z-index:-1;width:39%;height:33%}
+#ship{background-image:url(../../media/IMG/props/ship.png);position:fixed;top:15%;left:-4.5%;background-size:contain;background-repeat:no-repeat;z-index:-1;width:31%;height:40%}*/
+.window_all{position: fixed;top: 0%;left: 58.2%;width: 19.6%;height: 31%;}
+.window_all_anm{position: fixed;top: -90%;left: -25%;width: 150%;height: 235%; z-index: 5; -webkit-transition: all 4s linear;-moz-transition: all 4s linear;transition: all 4s linear;}
+.window_fe{background-image:url(../../media/IMG/window_fish_eye/window_fish_eye.png);position: absolute;top: -55%;left: 4px;background-size: contain;background-repeat: no-repeat;z-index: 3;
+width: 98%;height: 155%;visibility: visible;}
+.window_fe_close{background-image:url(../../media/IMG/window_fish_eye/window_fish_eye_close.png);position: absolute;top: -55%;left: 4px;background-size: contain;background-repeat: no-repeat;z-index: 3;width: 98%;
+height: 155%;}
+#window_fe_back{background-image:url(../../media/IMG/window_fish_eye/window_back.png);position: absolute;top: 23.8%;left: 6.5%;background-size: contain;background-repeat: no-repeat;z-index: -1;
+width: 88%;height: 69%;}
+#window_fe_shadow{background-image:url(../../media/IMG/window_fish_eye/window_shadow.png);position:absolute;top: 23.8%;left: 10%;background-size: contain;background-repeat: no-repeat;z-index: 2;width: 88%;height: 69%;}
+#window_fe_lh{background-image:url(../../media/IMG/props/lighthouse.png);position: absolute;top: 41.8%;left: 8%;background-size: contain;background-repeat: no-repeat;z-index: 1;width: 35%; height: 37%;}
+#earth{background-image:url(../../media/IMG/props/earthballon.png);position:fixed;top:38%;left:6%;background-size:contain;background-repeat:no-repeat;z-index:0;width:10%;height:17%}
+#cup{display:none;background-image:url(../../media/IMG/props/cup.png);position:fixed;top:50%;left:30.5%;background-size:contain;background-repeat:no-repeat;z-index:1;width:4%;height:5.5%}
+#sea_shell_sound{position:fixed;top: 51%;left: 18%;background-size:contain;background-repeat:no-repeat;z-index:5;width:4%;height:4%}
+/*#sea_shell{background-image:url(../../media/IMG/props/big_shell.png);position:fixed;top: 51.5%;
+left: 2%;background-size:contain;background-repeat:no-repeat;z-index:1;width:6%;height:4%}
+#shell{background-image:url(../../media/IMG/props/small_shell.png);position:fixed;top: 51.1%;
+left: 18.5%;background-size:contain;background-repeat:no-repeat;z-index:1;width:4%;height:4%}
+#megafon{background-image:url(../../media/IMG/props/megafon.png);position:fixed;top: 30.6%;
+left: 21.5%;background-size:contain;background-repeat:no-repeat;z-index:-2;width: 9%;height: 19%;}
+#timo{background-image:url(../../media/IMG/props/timo.png);position:fixed;top: 37%;left: 55%;background-size:contain;background-repeat:no-repeat;z-index:-1;width: 33%;height: 45%;}
+#anafora{background-image:url(../../media/IMG/props/anfora.png);position:fixed;top: 44%;
+left: 92%;background-size:contain;background-repeat:no-repeat;z-index:0;width: 7%;
+height: 39%;}
+#politja_larg{background-image:url(../../media/IMG/props/polutja_larg.png);position:fixed;top: 8%;left: 40%;background-size:contain;background-repeat:no-repeat;z-index:0;width: 5%;height: 41%;
+}
+#book_bell{
+    background-image:url(../../media/IMG/props/books_bell.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 70%;
+    left: 88.5%;
+    z-index: 1;
+    width: 10%;
+    height: 14%;    
+}
+#book_floor{
+    background-image:url(../../media/IMG/props/book_floor.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 67%;
+    left: 57%;
+    z-index: 0;
+    width: 12%;
+    height: 16%;;    
+}       
+#book_desk{
+    background-image:url(../../media/IMG/props/book_desk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 49.5%;
+    left: 20%;
+    z-index: 0;
+    width: 10%;
+    height: 6%;    
+} 
+#sextant{
+    background-image:url(../../media/IMG/props/sextant.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 43%;
+    left: 10.5%;
+    z-index: -1;
+    width: 10%;
+    height: 13%;
+}*/

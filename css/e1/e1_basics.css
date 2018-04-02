@@ -1,0 +1,1151 @@
+html {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 1024px;
+    height: 768px;
+}
+
+#frame {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;    
+}
+
+h1 {
+    @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+    font-size: 35px;
+    font-family: , sans-serif;
+}
+
+p {
+    @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+}
+
+.intro{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.intro_on{
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.main_back {
+    background: url(../../media/IMG/props/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6
+}
+
+.main_back_p {
+    background: url(../../media/IMG/props/full_back_p.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.off_back {
+    background: url(../../media/IMG/props/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.off_back_insta {
+    background: url(../../media/IMG/props/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    transition: all 0s;
+}
+
+
+#low_bar{
+    position: fixed;
+    top: 88%;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 15;
+    width: 104%;
+    height: 16%
+}
+
+#low_control_bar {
+    background: url(../../media/IMG/props/menu_bar.png);
+    position: fixed;
+    top: 88%;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 104%;
+    height: 16%
+}
+.low_control_bar_2{
+    background: url(../../media/IMG/props/menu_bar.png);
+    position: fixed;
+    top: 88%;
+    left: 59%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 12;
+    width: 35%;
+    height: 12%;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#des_index{
+    background: url(../../media/IMG/props/index_des.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 57%;
+    top: 10%;
+    z-index: 10;
+    width: 32%;
+    height: 56%;
+}
+
+.game_clue_1 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 91%;
+    left: 19%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;   
+}
+
+.game_clue_1_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 91%;
+    left: 19%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;   
+}
+
+.game_clue_1_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 89%;
+    left: 17%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    transition: all 3s;
+    -webkit-animation: blink_1 4s linear;
+    -moz-animation: blink_1 4s linear;
+    animation: blink_1 4s linear;
+}
+
+@-webkit-keyframes blink_1{
+    0% {opacity: 0.2;}
+    25% {opacity: 1.0;}
+    50% {opacity: 0.2;}
+    75% {opacity: 1.0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes blink_1{
+    0% {opacity: 0.2;}
+    25% {opacity: 1.0;}
+    50% {opacity: 0.2;}
+    75% {opacity: 1.0;}
+    100% {opacity: 1;}
+}
+
+@keyframes blink_1{
+    0% {opacity: 0.2;}
+    25% {opacity: 1.0;}
+    50% {opacity: 0.2;}
+    75% {opacity: 1.0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes blink_1_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_1_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_1_off{
+    0% {opacity: 1.0;}
+}
+
+
+
+.game_clue_2 {
+    background-image: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 91%;
+    left: 22%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_2_on {
+    display: none;
+    background-image: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 91%;
+    left: 22%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_2_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 89%;
+    left: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_2_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_2_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_2_off{
+    0% {opacity: 1.0;}
+}
+
+
+.game_clue_3 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 91%;
+    left: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_3_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 91%;
+    left: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_3_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 89%;
+    left: 23%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_3 5s linear;
+    -moz-animation: blink_3 5s linear;
+    animation: blink_3 5s linear;
+}
+
+@-webkit-keyframes blink_3_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_3_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_3_off{
+    0% {opacity: 1.0;}
+}
+.game_clue_4 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 91%;
+    left: 28%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_4_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 91%;
+    left: 28%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue_4_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 89%;
+    left: 26%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_4_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_4_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_4_off{
+    0% {opacity: 1.0;}
+}
+
+.game_clue_5 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 91%;
+    left: 31%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_5_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 91%;
+    left: 31%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue_5_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 89%;
+    left: 29%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_5_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_5_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_5_off{
+    0% {opacity: 1.0;}
+}
+
+.game_clue_6 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 94%;
+    left: 20.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_6_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 94%;
+    left: 20.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue_6_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 92%;
+    left: 18.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_6_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_6_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_6_off{
+    0% {opacity: 1.0;}
+}
+
+.game_clue_7 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 94%;
+    left: 23.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_7_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 94%;
+    left: 23.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue_7_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 92%;
+    left: 21.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_7_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_7_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_7_off{
+    0% {opacity: 1.0;}
+}
+.game_clue_7 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 94%;
+    left: 23.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_7_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 94%;
+    left: 23.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue_7_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 92%;
+    left: 21.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_7_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_7_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_7_off{
+    0% {opacity: 1.0;}
+}
+
+.game_clue_8 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 94%;
+    left: 26.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_8_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 94%;
+    left: 26.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue_8_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 92%;
+    left: 24.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_8_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_8_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_8_off{
+    0% {opacity: 1.0;}
+}
+
+.game_clue_9 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 94%;
+    left: 29.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_9_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 94%;
+    left: 29.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue_9_shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 92%;
+    left: 27.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_9_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_9_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_9_off{
+    0% {opacity: 1.0;}
+}
+
+.game_clue_10 {
+    background: url(../../media/IMG/props/diamond_button.png);
+    position: fixed;
+    top: 94%;
+    left: 32.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%
+}
+
+.game_clue_10_on {
+    display: none;
+    background: url(../../media/IMG/props/diamond_on.png);
+    position: fixed;
+    top: 94%;
+    left: 32.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 3%;
+    height: 3%;
+}
+
+.game_clue__shine {
+    display: none;
+    background: url(../../media/IMG/props/diamond_shine.png);
+    position: fixed;
+    top: 92%;
+    left: 29.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-animation: blink_1 5s linear;
+    -moz-animation: blink_1 5s linear;
+    animation: blink_1 5s linear;
+}
+
+@-webkit-keyframes blink_10_off{
+    0% {opacity: 1.0;}
+}
+
+@-moz-keyframes blink_10_off{
+    0% {opacity: 1.0;}
+}
+
+@keyframes blink_10_off{
+    0% {opacity: 1.0;}
+}
+.game_compass {
+    background: url(../../media/IMG/props/Compass_button.png);
+    position: fixed;
+    top: 91%;
+    left: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 4.5%;
+    height: 6%;
+}
+
+
+.game_compass_g {
+    background: url(../../media/IMG/props/Compass_button_g.png);
+    position: fixed;
+    top: 91%;
+    left: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 4.5%;
+    height: 6%;
+}
+
+.game_ancla {
+    background: url(../../media/IMG/props/ancla.png);
+    position: fixed;
+    top: 91%;
+    left: 11%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 7%;
+}
+
+.game_ancla_g {
+    background: url(../../media/IMG/props/ancla_g.png);
+    position: fixed;
+    top: 91%;
+    left: 11%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 7%;
+}
+
+.close_button {
+    background: url(../../media/IMG/props/index_button.png);
+    position: fixed;
+    top: 91%;
+    left: 90.2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 12;
+    width: 5%;
+    height: 6%;
+}
+
+.close_button_off {
+    background: url(../../media/IMG/props/index_button_g.png);
+    position: fixed;
+    top: 91%;
+    left: 89.7%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 12;
+    width: 5%;
+    height: 6%;
+    transform: rotateY(180deg);
+}
+
+.game_opinio {
+    background: url(../../media/IMG/props/phone_button.png);
+    position: fixed;
+    top: 91%;
+    left: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+.game_opinio_g {
+    background: url(../../media/IMG/props/phone_button.png);
+    position: fixed;
+    top: 91%;
+    left: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+
+.house_button {
+    background: url(../../media/IMG/props/house_button.png);
+    position: fixed;
+    top: 91%;
+    left: 63%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+.house_button_g {
+    background: url(../../media/IMG/props/house_button_g.png);
+    position: fixed;
+    top: 91%;
+    left: 63%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+
+.inf_button {
+    background: url(../../media/IMG/props/info_button.png);
+    position: fixed;
+    top: 91%;
+    left: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+.inf_button_g {
+    background: url(../../media/IMG/props/info_button_g.png);
+    position: fixed;
+    top: 91%;
+    left: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+
+.confi_button {
+    background: url(../../media/IMG/props/engrenatge.png);
+    position: fixed;
+    top: 91%;
+    left: 77%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+.confi_button_g {
+    background: url(../../media/IMG/props/engrenatge_g.png);
+    position: fixed;
+    top: 91%;
+    left: 77%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+
+.down_button {
+    background: url(../../media/IMG/props/float_button.png);
+    position: fixed;
+    top: 91%;
+    left: 84%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+.down_button_g {
+    background: url(../../media/IMG/props/float_button_g.png);
+    position: fixed;
+    top: 91%;
+    left: 84%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 11;
+    width: 5%;
+    height: 6%;
+}
+
+#table_arthur_text {
+    overflow: auto;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 60.4%;
+    height: 69%;
+}
+
+#table_arthur_text::scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+#table_arthur_text::scrollbar {
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+#table_arthur_text::scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.img_size_1_s_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 39%;
+    left: 88.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 8;
+}
+
+.img_size_1_end_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 72%;
+    left: 74.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.img_size_2_s_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 75%;
+    left: 88.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 8;
+}
+
+.img_size_2_end_ag {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 72%;
+    left: 74.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.img_size_1_end_pi {
+    background: url(../../media/IMG/props/size_icon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 79%;
+    left: 71.5%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.exit_icon_s {
+    background: url(../../media/IMG/props/exit_cros_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2%;
+    left: 89%;
+    width: 6%;
+    height: 8%;
+    z-index: 10;
+}
+
+.exit_icon_so {
+    background: url(../../media/IMG/props/exit_cros_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2%;
+    left: 89%;
+    width: 6%;
+    height: 8%;
+    z-index: 11;
+}
+
+.RP_face{
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 60%;
+    z-index: -3;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    
+}
+
+.RP_face_up{
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 60%;
+    z-index: 7;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+}
+
+.RP_face_2  {
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 61%;
+    z-index: -3;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    
+}
+
+.RP_face_up_2{
+    position: absolute;
+    width: 21%;
+    height: 39%;
+    top: 6%;
+    left: 61%;
+    z-index: 7;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+}

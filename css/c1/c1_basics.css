@@ -1,0 +1,983 @@
+#props_c1{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.cap_1{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    -webkit-transition: ease-out 7s;
+    -moz-transition: ease-out 7s;
+    transition: ease-out 7s;
+    -webkit-transition-delay: 5s;
+    -moz-transition-delay: 5s;
+    transition-delay: 5s;
+    opacity: 1;
+    display: none;
+    z-index: 1;
+}
+.cap_1_up{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: ease-out 2s;
+    -moz-transition: ease-out 2s;
+    transition: ease-out 2s;
+    -webkit-transition-delay: 5s;
+    -moz-transition-delay: 5s;
+    transition-delay: 5s;
+    opacity: 1;
+    
+}
+.main_back_c1{
+    background: url(../../media/IMG/c1/backs/light_sea_sky.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.background_ipm{
+    background: url(../../media/IMG/desk/fbook_back.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+}
+
+#c1_lh_all{
+    position: absolute;
+    top: 4%;
+    left: 0%;
+    width: 59%;
+    height: 54%;
+}
+.c1_lh{
+    background: url(../../media/IMG/c1/props/land.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 11.2%;
+    left: -39%;
+    width: 260%;
+    height: 125%;
+    z-index: 5;
+    -webkit-animation: c1_end 360s  forwards;
+    -moz-animation: c1_end 360s  forwards;
+    animation: c1_end 360s  forwards;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes c1_end{
+    0%{background-position:0 0px}
+    100%{background-position:-40000px 0px}}
+@-moz-keyframes c1_end{
+    0%{background-position:0 0px}
+    100%{background-position:-40000px 0px}}
+@keyframes c1_end{
+    0%{background-position:0 0px}
+    100%{background-position:-40000px 0px}}
+
+
+.c1_lh_house{
+    background: url(../../media/IMG/c1/props/house_full.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -21%;
+    width: 81%;
+    height: 87%;
+    z-index: 5;
+    -webkit-animation: c1_end 360s  forwards;
+    -moz-animation: c1_end 360s  forwards;
+    animation: c1_end 360s  forwards;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+
+.c1_lh_dock{
+    background: url(../../media/IMG/c1/props/dock.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 51%;
+    left: -13%;
+    width: 144%;
+    height: 96%;
+    z-index: 8;
+    -webkit-animation: c1_end 360s  forwards;
+    -moz-animation: c1_end 360s  forwards;
+    animation: c1_end 360s  forwards;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+
+.c1_boat{
+    background: url(../../media/IMG/c1/props/boat.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 62%;
+    height: 45%;
+    z-index: 9;
+    -webkit-animation: c1_end 360s  forwards;
+    -moz-animation: c1_end 360s  forwards;
+    animation: c1_end 360s  forwards;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+
+
+
+.c1_lh_wind{
+    background: url(../../media/IMG/c1/props/wind_glow.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -0.1%;
+    left: 27%;
+    width: 11%;
+    height: 18%;
+    z-index: 7;
+    -webkit-animation: wglow 5s infinite linear;
+    -moz-animation: wglow 5s infinite linear;
+    animation: wglow 3s infinite linear;
+    opacity: 0;
+}
+
+@keyframes wglow{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes wglow{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes wglow{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#c1_water_all{
+    position: absolute;
+    top: 62%;
+    left: 0%;
+    width: 100%;
+    height: 42%;
+}
+/*.c1_water_behind{
+    background: url(../../media/IMG/c1/water/behind_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 29%;
+    z-index: 5;
+}
+
+.c1_water_behind_m{
+    background: url(../../media/IMG/c1/water/behind_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 29%;
+    z-index: 5;
+    -webkit-animation: water_move 55s infinite linear;
+    -moz-animation: water_move 55s infinite linear;
+    animation: water_move 55s infinite linear;
+}*/
+        
+@-webkit-keyframes water_move{
+    0%{background-position:0px 0px}
+    25%{background-position:000px 17px}
+    50%{background-position:000px 0px}
+    75%{background-position:000px 17px}
+    100%{background-position:000px 0px}}
+
+@-moz-keyframes water_move{
+    0%{background-position:0px 0px}
+    25%{background-position:-1000px 17px}
+    50%{background-position:000px 0px}
+    75%{background-position:000px 17px}
+    100%{background-position:0px 0px}}
+
+@keyframes water_move{
+    0%{background-position:0px 0px}
+    25%{background-position: 000px 17px}
+    50%{background-position: 000px 0px}
+    75%{background-position:000px 17px}
+    100%{background-position:000px 0px}}
+
+.c1_water_top_m{
+    background: url(../../media/IMG/c1/water/top_water.png); 
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: -6%;
+    width: 100%;
+    height: 30.5%;
+    z-index: 5;
+    -webkit-animation: water_move 8s infinite linear;
+    -moz-animation: water_move 8s infinite linear;
+    animation: water_move 8s infinite linear;
+   }
+
+.c1_water_higger_m{
+    background: url(../../media/IMG/c1/water/higger_water.png); 
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    width: 100%;
+    height: 31%;
+    z-index: 7;
+    -webkit-animation: water_move 8s infinite linear;
+    -moz-animation: water_move 8s infinite linear;
+    animation: water_move 8s infinite linear;
+   }
+/**.c1_water_up{
+    background: url(../../media/IMG/c1/water/upp_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    width: 100%;
+    height: 29.5%;
+    z-index: 7;
+}
+.c1_water_up_m{
+    background: url(../../media/IMG/c1/water/upp_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    width: 100%;
+    height: 24%;
+    z-index: 7;
+    -webkit-animation: water_move 55s infinite linear;
+    -moz-animation: water_move 55s infinite linear;
+    animation: water_move 5s infinite linear;
+}**/
+.c1_water_mid{
+    background: url(../../media/IMG/c1/water/mid_water.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 32%;
+    left: 0%;
+    width: 100%;
+    height: 22%;
+    z-index: 8;
+}
+
+.c1_water_mid_m{
+    background: url(../../media/IMG/c1/water/mid_water.png); 
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 29%;
+    left: 0%;
+    width: 100%;
+    height: 18.7%;
+    z-index: 8;
+    -webkit-animation: water_move 8s infinite linear;
+    -moz-animation: water_move 8s infinite linear;
+    animation: water_move 8s infinite linear;
+} 
+        
+.c1_water_down{
+    background: url(../../media/IMG/c1/water/lower_water.png); 
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 100%;
+    height: 36.8%;
+    z-index: 9;
+}
+
+.c1_water_down_m{
+    background: url(../../media/IMG/c1/water/lower_water.png); 
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 100%;
+    height: 36.8%;
+    z-index: 9;
+    -webkit-animation: water_move 8s infinite linear;
+    -moz-animation: water_move 8s infinite linear;
+    animation: water_move 8s infinite linear;
+} 
+
+
+
+@-webkit-keyframes water_c1_m{
+    0%{background-position:0 0px}
+    50%{background-position:-45000px 20px}
+    100%{background-position:-12000px 0px}}
+@-moz-keyframes water_c1_m{
+    0%{background-position:0 0px}
+    50%{background-position:-4500px 20px}
+    100%{background-position:-12000px 0px}}
+@keyframes water_c1_m{
+    0%{background-position:0 0px}
+    20%{background-position:-2000px 0px}
+    100%{background-position:-10000px 0px}}
+
+
+
+.c1_ship{
+    background: url(../../media/IMG/c1/props/ship.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7%;
+    left: 16%;
+    width: 64%;
+    height: 66%;
+    z-index: 5;
+    transform-origin: top center;
+}
+
+.c1_ship_glow{
+    background: url(../../media/IMG/c1/props/ship_glow.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 6.9%;
+    left: 16%;
+    width: 64%;
+    height: 66%;
+    z-index: 6;
+     -webkit-animation: wglow 5s infinite linear;
+    -moz-animation: wglow 5s infinite linear;
+    animation: wglow 3s infinite linear;
+    opacity: 0;
+}
+
+#ship_click{
+    position:relative;
+    z-index:9;
+    opacity: 0;
+}
+
+@keyframes sglow{
+    0% {opacity: 1;}
+    40% {opacity: 0;}
+    60% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes sglow{
+    0% {opacity: 1;}
+    40% {opacity: 0;}
+    60% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes sglow{
+    0% {opacity: 1;}
+    40% {opacity: 0;}
+    60% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.c1_ship_m{
+    background: url(../../media/IMG/c1/props/ship.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12%;
+    left: 26%;
+    width: 58%;
+    height: 60%;
+    z-index: 5;
+    transform-origin: top center;
+    animation: ship_move 5s infinite linear;
+}
+@keyframes ship_move {
+    0% {
+        transform: rotate(0deg);
+        background-position: 5px 0px;
+    }
+    25% {
+        transform: rotate(-2deg);
+        background-position: -5px 10px;
+    }
+    50% {
+        transform: rotate(0deg);
+        background-position: 5px 0px;
+    }
+    75% {
+        transform: rotate(2deg);
+        background-position: -5px 10px;
+    }
+    100% {
+        transform: rotate(0deg);
+        background-position: 5px 0px;
+    }
+}
+.c1_dofi_petit{
+    display: none;
+    background: url(../../media/IMG/c1/props/dofi_petit.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3%;
+    left: 49%;
+    width: 5%;
+    height: 35%;
+    z-index: 6;
+    transform-origin: bottom center;
+    animation: dofi_petit 45s infinite linear;
+    animation-delay: 15s;
+    transform: rotate(590deg);
+}
+@keyframes dofi_petit {
+    0% {
+        transform: rotate(180deg);
+        
+    }
+    25% {
+        transform: rotate(200deg);
+        
+    }
+    31% {
+        transform: rotate(570deg);
+        
+    }
+    75% {
+        transform: rotate(580deg);
+        
+    }
+    100% {
+        transform: rotate(590deg);
+        
+    }
+}
+.c1_dofi_mitg{
+    display: none;
+    background: url(../../media/IMG/c1/props/dofi_petit.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 6%;
+    left: 52%;
+    width: 7%;
+    height: 40%;
+    z-index: 6;
+    transform-origin: bottom center;
+    animation: dofi_mitg 15s infinite linear;
+    animation-delay: 15s;
+    transform: rotate(590deg);
+}
+@keyframes dofi_mitg {
+    0% {
+        transform: rotate(180deg);
+        
+    }
+    25% {
+        transform: rotate(200deg);
+        
+    }
+    45% {
+        transform: rotate(570deg);
+        
+    }
+    75% {
+        transform: rotate(580deg);
+        
+    }
+    100% {
+        transform: rotate(590deg);
+        
+    }
+}
+
+.c1_dofi_gran{
+    display: none;
+    background: url(../../media/IMG/c1/props/dofi_petit.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 19%;
+    left: 60%;
+    width: 9%;
+    height: 40%;
+    z-index: 7;
+    transform-origin: bottom center;
+    animation: dofi_gran 30s infinite linear;
+    animation-delay: 15s;
+    transform: rotate(590deg);
+}
+@keyframes dofi_gran {
+    0% {
+        transform: rotate(180deg);
+        
+    }
+    25% {
+        transform: rotate(200deg);
+        
+    }
+    35% {
+        transform: rotate(570deg);
+        
+    }
+    75% {
+        transform: rotate(580deg);
+        
+    }
+    100% {
+        transform: rotate(590deg);
+        
+    }
+}
+
+.c1_seagulls{
+    background: url("../../media/IMG/c1/props/seagulls_up.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+    z-index: 6;
+    transform-origin: top center;
+    animation: seagulls 40s infinite linear;
+}
+
+
+@keyframes seagulls {
+    0% {
+        background-position: 100px 0px;
+    }
+    20% {
+        background-position: 100px -125px;
+    }
+    40% {
+        background-position: 100px 00px;
+    }
+    60% {
+        background-position: 100px -125px;
+    }
+    80% {
+        background-position: 100px 0px;
+    }
+    100% {
+        background-position: 100px -50px;
+    }
+}
+
+@keyframes seagulls_m {
+    0% {
+        background-position: 100px -50px;
+    }
+    20% {
+        background-position: -700px -125px;
+    }
+    40% {
+        background-position: -1500px 00px;
+    }
+    60% {
+        background-position: -3000px -125px;
+    }
+    80% {
+        background-position: -6000px 0px;
+    }
+    100% {
+        background-position: -8000px -50px;
+    }
+}
+
+
+
+.c1_seagulls_2{
+    background: url("../../media/IMG/c1/props/seagulls_down.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: fixed;
+    top: -100px;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+    z-index: 6;
+    transform-origin: top center;
+    animation: seagulls_2 35s infinite linear;
+}
+
+
+@keyframes seagulls_2 {
+    0% {
+        background-position: -200px -100px;
+    }
+    25% {
+        background-position: -200px 0px;
+    }
+    50% {
+        background-position: -200px -100px;
+    }
+    75% {
+        background-position: -200px 0px;
+    }
+    100% {
+        background-position: -200px -100px;
+    }
+}
+
+@keyframes seagulls_2_m {
+    0% {
+        background-position: -200px -100px;
+    }
+    25% {
+        background-position: -1500px 0px;
+    }
+    50% {
+        background-position: -3000px -100px;
+    }
+    75% {
+        background-position: -6000px 0px;
+    }
+    100% {
+        background-position: -8000px -100px;
+    }
+}
+
+#c1_lh_click {
+    height: 67px;
+    position: relative;
+    width: 35px;
+    z-index: 10;
+    top: -1%;
+    left: 29%;
+    border-top-right-radius: 100%;
+}
+
+.wind_table{
+    display: none;
+    background: url(../../media/IMG/c1/info_b/winfo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.wind_table_ex{
+    position: fixed;
+    border-radius: 50%;
+    height: 3.5%;
+    width: 2.7%;
+    top: 59%;
+    left: 76.1%;
+    z-index: 10;
+}
+.wind_table_c{
+    display: none;
+    background: url(../../media/IMG/c1/info_b/winfo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.wind_table_ex_c{
+    position: fixed;
+    border-radius: 50%;
+    height: 3.5%;
+    width: 2.7%;
+    top: 59%;
+    left: 76.1%;
+    z-index: 10;
+}
+
+.ship_table{
+    display: none;
+    background: url(../../media/IMG/c1/info_b/exship.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.ship_table_ex{
+    position: fixed;
+    border-radius: 50%;
+    height: 3.5%;
+    width: 2.7%;
+    top: 49.3%;
+    left: 79.7%;
+    z-index: 11;
+}
+
+.rope_stable{
+    background: url(../../media/IMG/c1/info_b/ancla.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110%;
+    position: absolute;
+    width: 13%;
+    z-index: 9;
+    top: 58%;
+    left: 43.3%;
+    bottom: 70%;
+    animation: rope 13s forwards linear;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    transform-origin: top center;
+}
+
+@keyframes rope {
+    0% {
+        background-position: 0px 0px;
+    }
+    50%{
+        background-position: 0px -620px;
+        transform: rotateZ(0deg);
+    }
+    60%{
+        background-position: 0px -620px;
+        transform: rotateZ(3deg);
+    }
+    70%{
+        background-position: 0px -620px;
+        transform: rotateZ(-3deg);
+    }
+    80%{
+        background-position: 0px -620px;
+        transform: rotateZ(2deg);
+    }
+    90%{
+        background-position: 0px -620px;
+        transform: rotateZ(-1deg);
+    }
+    100%{
+        background-position: 0px -620px;
+        transform: rotateZ(0deg);
+    }
+}   
+
+.shadow_st{
+    background: url(../../media/IMG/c1/info_b/shadow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3%;
+    position: fixed;
+    width: 3%;
+    z-index: 10;
+    top: 57.6%;
+    left: 48.5%;
+}
+
+#st_v_c{
+    position: fixed;
+    width: 15.5%;
+    z-index: 11;
+    top: 49.5%;
+    left: 42%;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+#st_v_v{
+    position: fixed;
+    width: 15.5%;
+    z-index: 11;
+    top: 49.5%;
+    left: 42%;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+#st_av{
+    display: none
+}
+#st_ac{
+    display: none
+}
+
+.c1_b_v_up{
+    background: url(../../media/IMG/c1/info_b/c1_b_v_up.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6%;
+    position: absolute;
+    width: 5%;
+    z-index: 10;
+    top: 48.7%;
+    left: 63.2%;
+}
+
+.c1_b_v_up_a{
+    background: url(../../media/IMG/c1/info_b/c1_b_v_up.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6%;
+    position: absolute;
+    width: 5%;
+    z-index: 10;
+    top: 48.7%;
+    left: 63.2%;
+}
+
+.c1_b_c_up{
+    background: url(../../media/IMG/c1/info_b/c1_b_c_up.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6%;
+    position: absolute;
+    width: 5%;
+    z-index: 10;
+    top: 48.7%;
+    left: 32.3%;
+}
+
+.c1_b_c_up_a{
+    background: url(../../media/IMG/c1/info_b/c1_b_c_up.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6%;
+    position: absolute;
+    width: 5%;
+    z-index: 10;
+    top: 48.7%;
+    left: 32.3%;
+}
+
+.c1_b_v_on{
+    display: none;
+    background: url(../../media/IMG/c1/info_b/c1_b_v_on.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 36%;
+    position: absolute;
+    width: 82%;
+    z-index: 10;
+    top: 47%;
+    left: 9%;
+}
+
+.c1_b_c_on{
+    display: none;
+    background: url(../../media/IMG/c1/info_b/c1_b_c_on.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 36%;
+    position: absolute;
+    width: 82%;
+    z-index: 10;
+    top: 47%;
+    left: 9%;
+}
+
+.c1_b_v_s{
+    display: none;
+    background: url(../../media/IMG/c1/info_b/c1_b_c_oreola.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 9%;
+    position: absolute;
+    width: 7%;
+    z-index: 5;
+    top: 47.2%;
+    left: 62%;
+}
+
+.c1_b_c_s{
+    display: block;
+    background: url(../../media/IMG/c1/info_b/c1_b_c_oreola.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 9%;
+    position: absolute;
+    width: 7%;
+    z-index: 5;
+    top: 47.2%;
+    left: 31.2%;
+}
+
+.c1_lh_dock_s {
+    background: url(../../media/IMG/c1/props/seagull_ml.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 111%;
+    left: 119%;
+    width: 7%;
+    height: 6%;
+    z-index: 10;
+    -webkit-animation: c1_end_s 365s  forwards;
+    -moz-animation: c1_end_s 365s  forwards;
+    animation: c1_end_s 365s  forwards;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes c1_end_s{
+    0%{left:0 0px}
+    100%{left:  -40000px}}
+@-moz-keyframes c1_end_s{
+    0%{left:0 0px}
+    100%{left:  -40000px}}
+@keyframes c1_end_s{
+    0%{left:0 0px}
+    100%{left:  -40000px}}
+
+#c1_c_button{
+    display: none;
+}
+#c1_v_button{
+    display: none;
+}

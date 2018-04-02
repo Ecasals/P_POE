@@ -1,0 +1,118 @@
+.scene_change {
+    background: url(../media/IMG/SC/back_sc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    -webkit-transition: ease-in 1.5s;
+    -moz-transition: ease-in 1.5s;
+    transition: ease-in 1.5s;
+    transform: translateX(-100%);
+}
+
+.scene_change_m {
+    background: url(../media/IMG/SC/back_sc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    -webkit-transition: ease-in-out 4s;
+    -moz-transition: ease-in-out 4s;
+    transition: ease-in-out 4s;
+}
+
+.sc_ancla {
+    background: url(../media/IMG/SC/ancla_sc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32%;
+    height: 50%;
+    top: 24%;
+    left: 34%;
+    position: absolute;
+    transition: ease-in-out  4s;
+    transform-origin: center;
+}
+
+.sc_ancla_m {
+    background: url(../media/IMG/SC/ancla_sc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32%;
+    height: 50%;
+    top: 24%;
+    left: 34%;
+    position: absolute;
+    transition: ease-in-out  4s;
+    transform: rotateZ(180deg);
+    transform-origin: center;
+}
+
+
+.sc_aura {
+    background: url(../media/IMG/SC/ancla_glow_sc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 38%;
+    top: 22%;
+    left: 32.5%;
+    height: 54%;
+    position: absolute;
+    -webkit-animation: sc_glow 3s infinite linear;
+    -moz-animation: sc_glow 3s infinite linear;
+    animation: sc_glow 3s infinite linear;
+}
+
+@-webkit-keyframes sc_glow{0%{opacity: 0}50%{opacity: 1}100%{opacity: 0}}
+@-moz-keyframes sc_glow{0%{opacity: 0}50%{opacity: 1}100%{opacity: 0}}
+@keyframes sc_glow{0%{opacity: 0}50%{opacity: 1}100%{opacity: 0}}
+
+
+.sc_corda {
+    display: block;
+    background: url(../media/IMG/SC/corda_sc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10.5%;
+    left: 21.5%;
+    width: 57%;
+    height: 76%;
+    position: absolute;
+    -webkit-transition: ease-in-out 4s;
+    -moz-transition: ease-in-out 4s;
+    transition: ease-in-out 4s;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.sc_corda_m {
+    display: block;
+    background: url(../media/IMG/SC/corda_sc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10.5%;
+    left: 21.5%;
+    width: 57%;
+    height: 76%;
+    position: absolute;
+    -webkit-transition: ease-in-out 4s;
+    -moz-transition: ease-in-out 4s;
+    transition: ease-in-out 4s;
+    border-radius: 50%;
+    transform: rotateZ(-300deg);
+    transform-origin: center;
+}
+
+.sc_clic_c1 {
+    display: block;
+    top: 16%;
+    left: 26%;
+    width: 48%;
+    height: 65%;
+    position: absolute;
+    border-radius: 50%;
+}

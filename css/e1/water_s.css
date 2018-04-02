@@ -1,0 +1,132 @@
+.water_s{background:url(../../media/IMG/window_fish_eye/window_both_water.png);background-size:contain;background-repeat:repeat-x;position:absolute;top: 74%;left: 15%;width: 65%;
+height: 19%;z-index:1;-webkit-animation:water_s 45s infinite linear;-moz-animation:water_s 45s infinite linear;animation:water_s 45s infinite linear;border-bottom-left-radius:120px;border-bottom-right-radius:120px}
+
+.water_u{background:url(../../media/IMG/window_fish_eye/window_both_water.png);background-size:contain;background-repeat:repeat-x;position:absolute;top: 71%;left: 36%;width: 46%;
+height: 17%;z-index:0;-webkit-animation:water_u 45s infinite linear;-moz-animation:water_u 45s infinite linear;animation:water_u 45s infinite linear;border-bottom-left-radius:120px;border-bottom-right-radius:120px}
+
+@-webkit-keyframes water_s{
+    0%{background-position:0 0}
+    20%{background-position:100px 0px}
+    40%{background-position:200px 0px}
+    60%{background-position:300px 0px}
+    80%{background-position:400px 0px}
+    100%{background-position:500px 0px}}
+
+@-moz-keyframes water_s{
+    0%{background-position:0 0}
+    20%{background-position:100px 0px}
+    40%{background-position:200px 0px}
+    60%{background-position:300px 0px}
+    80%{background-position:400px 0px}
+    100%{background-position:500px 0px}}
+
+@keyframes water_s{
+    0%{background-position:0 0}
+    20%{background-position:100px 0px}
+    40%{background-position:200px 0px}
+    60%{background-position:300px 0px}
+    80%{background-position:400px 0px}
+    100%{background-position:500px 0px}}
+
+@-webkit-keyframes water_u{
+    0%{background-position:0 0px}
+    25%{background-position:-100px 0}
+    50%{background-position:-200px 0px}
+    75%{background-position:-300px 0}
+    100%{background-position:-400px 0px}}
+@-moz-keyframes water_u{
+    0%{background-position:0 0px}
+    25%{background-position:-100px 0}
+    50%{background-position:-200px 0px}
+    75%{background-position:-300px 0}
+    100%{background-position:-400px 0px}}
+@keyframes water_u{
+    0%{background-position:0 0px}
+    25%{background-position:-100px 0}
+    50%{background-position:-200px 0px}
+    75%{background-position:-300px 0}
+    100%{background-position:-400px 0px}}
+
+.smoke{    
+    display: none;
+    background-image: url(../../media/IMG/props/smoke.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 45.7%;
+    left: 30.8%;
+    z-index: -1;
+    width: 2.1%;
+    height: 5%;
+    -webkit-animation: smoke 6000s infinite linear;
+    -moz-animation: smoke 6000s infinite linear;
+    animation: smoke 6000s infinite linear;
+    border-top-right-radius: 500%;
+    border-top-left-radius: 500%;
+}
+
+@-webkit-keyframes smoke
+{0%{background-position:0 0px;opacity:.2}
+    25%{background-position:0 -20000px;opacity:.1}
+    50%{background-position:0 -40000px;opacity:.1}
+    75%{background-position:0 -60000px;opacity:.1}
+    100%{background-position:0 -80000px;opacity:.2}}
+
+@-moz-keyframes smoke
+{0%{background-position:0 0px;opacity:.2}
+    25%{background-position:0 -20000px;opacity:.1}
+    50%{background-position:0 -40000px;opacity:.1}
+    75%{background-position:0 -60000px;opacity:.1}
+    100%{background-position:0 -80000px;opacity:.2}}
+
+@keyframes smoke
+{0%{background-position:0 0px;opacity:.2}
+    25%{background-position:0 -20000px;opacity:.1}
+    50%{background-position:0 -40000px;opacity:.1}
+    75%{background-position:0 -60000px;opacity:.1}
+    100%{background-position:0 -80000px;opacity:.2}}
+
+
+/** EARTH **/
+
+.earth_anm {    
+    position: absolute;
+    background: url(../../media/IMG/props/earth_map_reduce.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    top: 7%;
+    left: 10.5%;
+    width: 76%;
+    height: 60%;
+    z-index: 5;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    transition: all 2s;
+}
+
+.earth_anm_on {    
+    position: absolute;
+    background: url(../../media/IMG/props/earth_map_reduce.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    top: 7%;
+    left: 10.5%;
+    width: 76%;
+    height: 60%;
+    z-index: 5;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    transition: all 2s;
+    background-position: 500%;
+}
+.earth_anm_c {    
+    position: absolute;
+    border-radius: 50%;
+    top: 39.2%;
+    left: 7%;
+    width: 7.5%;
+    height: 10%;
+    z-index: 7;
+}
