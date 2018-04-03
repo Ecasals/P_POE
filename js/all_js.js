@@ -2,8 +2,14 @@ var weaves = document.getElementById("main_theme_e1");
 var joe = document.getElementById("joe_cough");
 var drawer = document.getElementById("drawer_sound");
 var lamp = document.getElementById("light_sound");
-var lamp = document.getElementById("conch_sound");
+var conch = document.getElementById("conch_sound");
 var bell = document.getElementById("bell");
+var texts = document.getElementById("xat_auidio");
+
+
+// TIMER //
+var tiger = setInterval(tiger, 8000);
+// TIMER //
 
 document.getElementById("ba").addEventListener("mousedown", bamouseDown);
 document.getElementById("ba").addEventListener("mouseup", bamouseUp);
@@ -20,13 +26,30 @@ document.getElementById("bd").addEventListener("mouseup", bdmouseUp);
 document.getElementById("bd").addEventListener("touchstart", bdtouchstart);
 document.getElementById("bd").addEventListener("touchend", bdtouchend);
 
+document.getElementById("bag").addEventListener("mousedown", bagmouseDown);
+document.getElementById("bag").addEventListener("mouseup", bagmouseUp);
+document.getElementById("bag").addEventListener("touchstart", bagTouchEvent);
+document.getElementById("bag").addEventListener("touchend", bagtouchend);
+
+document.getElementById("bmg").addEventListener("mousedown", bmgmouseDown);
+document.getElementById("bmg").addEventListener("mouseup", bmgmouseUp);
+document.getElementById("bmg").addEventListener("touchstart", bmgtouchstart);
+document.getElementById("bmg").addEventListener("touchend", bmgtouchend);
+
+document.getElementById("bdg").addEventListener("mousedown", bdgmouseDown);
+document.getElementById("bdg").addEventListener("mouseup", bdgmouseUp);
+document.getElementById("bdg").addEventListener("touchstart", bdgtouchstart);
+document.getElementById("bdg").addEventListener("touchend", bdgtouchend);
+
 function bamouseDown() {
     "use strict";
     if (document.getElementById("ba").className === "ba_on") {
         document.getElementById("ba").style.opacity = "0";
         document.getElementById("ba").className = "ba_off";
+        document.getElementById("bag").className = "ba_off";
     } else if (document.getElementById("ba").className === "ba_off") {
         document.getElementById("ba").className = "ba_on";
+        document.getElementById("bag").className = "ba_on";
         document.getElementById("ba").style.opacity = "0";
     }
 }
@@ -36,9 +59,24 @@ function bamouseUp() {
     if (document.getElementById("ba").className === "ba_off") {
         document.getElementById("ba").style.opacity = "1";
         document.getElementById("ba").className = "ba_off";
+        document.getElementById("bag").className = "ba_off";
+        lamp.muted = true;
+        weaves.muted = true;
+        drawer.muted = true;
+        joe.muted = true;
+        bell.muted = true;
+        conch.muted = true;
+        texts.muted = true;
     }
     if (document.getElementById("ba").className === "ba_on") {
         document.getElementById("ba").style.opacity = "1";
+        lamp.muted = false;
+        weaves.muted = false;
+        drawer.muted = false;
+        joe.muted = false;
+        bell.muted = false;
+        conch.muted = false;
+        texts.muted = false;
     }
 }
 
@@ -47,8 +85,10 @@ function TouchEvent() {
     if (document.getElementById("ba").className === "ba_on") {
         document.getElementById("ba").style.opacity = "0";
         document.getElementById("ba").className = "ba_off";
+        document.getElementById("bag").className = "ba_off";
     } else if (document.getElementById("ba").className === "ba_off") {
         document.getElementById("ba").className = "ba_on";
+        document.getElementById("bag").className = "ba_on";
         document.getElementById("ba").style.opacity = "0";
     }
 }
@@ -58,9 +98,24 @@ function batouchend() {
     if (document.getElementById("ba").className === "ba_off") {
         document.getElementById("ba").style.opacity = "1";
         document.getElementById("ba").className = "ba_off";
+        document.getElementById("bag").className = "ba_off";
+        lamp.muted = true;
+        weaves.muted = true;
+        drawer.muted = true;
+        joe.muted = true;
+        bell.muted = true;
+        conch.muted = true;
+        texts.muted = true;
     }
     if (document.getElementById("ba").className === "ba_on") {
         document.getElementById("ba").style.opacity = "1";
+        lamp.muted = false;
+        weaves.muted = false;
+        drawer.muted = false;
+        joe.muted = false;
+        bell.muted = false;
+        conch.muted = false;
+        texts.muted = false;
     }
 }
 
@@ -69,8 +124,10 @@ function bmmouseDown() {
     if (document.getElementById("bm").className === "bm_on") {
         document.getElementById("bm").style.opacity = "0";
         document.getElementById("bm").className = "bm_off";
+        document.getElementById("bmg").className = "bm_off";
     } else if (document.getElementById("bm").className === "bm_off") {
         document.getElementById("bm").className = "bm_on";
+        document.getElementById("bmg").className = "bm_on";
         document.getElementById("bm").style.opacity = "0";
     }
 }
@@ -80,6 +137,7 @@ function bmmouseUp() {
     if (document.getElementById("bm").className === "bm_off") {
         document.getElementById("bm").style.opacity = "1";
         document.getElementById("bm").className = "bm_off";
+        document.getElementById("bmg").className = "bm_off";
     }
     if (document.getElementById("bm").className === "bm_on") {
         document.getElementById("bm").style.opacity = "1";
@@ -91,8 +149,10 @@ function bmtouchstart() {
     if (document.getElementById("bm").className === "bm_on") {
         document.getElementById("bm").style.opacity = "0";
         document.getElementById("bm").className = "bm_off";
+        document.getElementById("bmg").className = "bm_off";
     } else if (document.getElementById("bm").className === "bm_off") {
         document.getElementById("bm").className = "bm_on";
+        document.getElementById("bmg").className = "bm_on";
         document.getElementById("bm").style.opacity = "0";
     }
 }
@@ -102,6 +162,7 @@ function bmtouchend() {
     if (document.getElementById("bm").className === "bm_off") {
         document.getElementById("bm").style.opacity = "1";
         document.getElementById("bm").className = "bm_off";
+        document.getElementById("bmg").className = "bm_off";
     }
     if (document.getElementById("bm").className === "bm_on") {
         document.getElementById("bm").style.opacity = "1";
@@ -113,8 +174,10 @@ function bdmouseDown() {
     if (document.getElementById("bd").className === "bd_on") {
         document.getElementById("bd").style.opacity = "0";
         document.getElementById("bd").className = "bd_off";
+        document.getElementById("bdg").className = "bd_off";
     } else if (document.getElementById("bd").className === "bd_off") {
         document.getElementById("bd").className = "bd_on";
+        document.getElementById("bdg").className = "bd_on";
         document.getElementById("bd").style.opacity = "0";
     }
 }
@@ -124,6 +187,7 @@ function bdmouseUp() {
     if (document.getElementById("bd").className === "bd_off") {
         document.getElementById("bd").style.opacity = "1";
         document.getElementById("bd").className = "bd_off";
+        document.getElementById("bdg").className = "bd_off";
     }
     if (document.getElementById("bd").className === "bd_on") {
         document.getElementById("bd").style.opacity = "1";
@@ -135,8 +199,10 @@ function bdtouchstart() {
     if (document.getElementById("bd").className === "bd_on") {
         document.getElementById("bd").style.opacity = "0";
         document.getElementById("bd").className = "bd_off";
+        document.getElementById("bdg").className = "bd_off";
     } else if (document.getElementById("bd").className === "bd_off") {
         document.getElementById("bd").className = "bd_on";
+        document.getElementById("bdg").className = "bd_on";
         document.getElementById("bd").style.opacity = "0";
     }
 }
@@ -146,9 +212,188 @@ function bdtouchend() {
     if (document.getElementById("bd").className === "bd_off") {
         document.getElementById("bd").style.opacity = "1";
         document.getElementById("bd").className = "bd_off";
+        document.getElementById("bdg").className = "bd_off";
     }
     if (document.getElementById("bd").className === "bd_on") {
         document.getElementById("bd").style.opacity = "1";
+    }
+}
+
+// SOUND BUTTONS IN-GAME //
+
+function bagmouseDown() {
+    "use strict";
+    if (document.getElementById("bag").className === "ba_on") {
+        document.getElementById("bag").style.opacity = "0";
+        document.getElementById("bag").className = "ba_off";
+        document.getElementById("ba").className = "ba_off";
+    } else if (document.getElementById("bag").className === "ba_off") {
+        document.getElementById("bag").className = "ba_on";
+        document.getElementById("ba").className = "ba_on";
+        document.getElementById("bag").style.opacity = "0";
+    }
+}
+
+function bagmouseUp() {
+    "use strict";
+    if (document.getElementById("bag").className === "ba_off") {
+        document.getElementById("bag").style.opacity = "1";
+        document.getElementById("bag").className = "ba_off";
+        document.getElementById("ba").className = "ba_off";
+        lamp.muted = true;
+        weaves.muted = true;
+        drawer.muted = true;
+        joe.muted = true;
+        bell.muted = true;
+        conch.muted = true;
+        texts.muted = true;
+    }
+    if (document.getElementById("bag").className === "ba_on") {
+        document.getElementById("bag").style.opacity = "1";
+        lamp.muted = false;
+        weaves.muted = false;
+        drawer.muted = false;
+        joe.muted = false;
+        bell.muted = false;
+        conch.muted = false;
+        texts.muted = false;
+    }
+}
+
+function bagTouchEvent() {
+    "use strict";
+    if (document.getElementById("bag").className === "ba_on") {
+        document.getElementById("bag").style.opacity = "0";
+        document.getElementById("bag").className = "ba_off";
+        document.getElementById("ba").className = "ba_off";
+    } else if (document.getElementById("bag").className === "ba_off") {
+        document.getElementById("bag").className = "ba_on";
+        document.getElementById("ba").className = "ba_on";
+        document.getElementById("bag").style.opacity = "0";
+    }
+}
+
+function bagtouchend() {
+    "use strict";
+    if (document.getElementById("bag").className === "ba_off") {
+        document.getElementById("bag").style.opacity = "1";
+        document.getElementById("bag").className = "ba_off";
+        document.getElementById("ba").className = "ba_off";
+        lamp.muted = true;
+        weaves.muted = true;
+        drawer.muted = true;
+        joe.muted = true;
+        bell.muted = true;
+        conch.muted = true;
+    }
+    if (document.getElementById("bag").className === "ba_on") {
+        document.getElementById("bag").style.opacity = "1";
+        lamp.muted = false;
+        weaves.muted = false;
+        drawer.muted = false;
+        joe.muted = false;
+        bell.muted = false;
+        conch.muted = false;
+    }
+}
+
+function bmgmouseDown() {
+    "use strict";
+    if (document.getElementById("bmg").className === "bm_on") {
+        document.getElementById("bmg").style.opacity = "0";
+        document.getElementById("bmg").className = "bm_off";
+        document.getElementById("bm").className = "bm_off";
+    } else if (document.getElementById("bmg").className === "bm_off") {
+        document.getElementById("bmg").className = "bm_on";
+        document.getElementById("bm").className = "bm_on";
+        document.getElementById("bmg").style.opacity = "0";
+    }
+}
+
+function bmgmouseUp() {
+    "use strict";
+    if (document.getElementById("bmg").className === "bm_off") {
+        document.getElementById("bmg").style.opacity = "1";
+        document.getElementById("bmg").className = "bm_off";
+        document.getElementById("bm").className = "bm_off";
+    }
+    if (document.getElementById("bmg").className === "bm_on") {
+        document.getElementById("bmg").style.opacity = "1";
+    }
+}
+
+function bmgtouchstart() {
+    "use strict";
+    if (document.getElementById("bmg").className === "bm_on") {
+        document.getElementById("bmg").style.opacity = "0";
+        document.getElementById("bmg").className = "bm_off";
+        document.getElementById("bm").className = "bm_off";
+    } else if (document.getElementById("bmg").className === "bm_off") {
+        document.getElementById("bmg").className = "bm_on";
+        document.getElementById("bm").className = "bm_on";
+        document.getElementById("bmg").style.opacity = "0";
+    }
+}
+
+function bmgtouchend() {
+    "use strict";
+    if (document.getElementById("bmg").className === "bm_off") {
+        document.getElementById("bmg").style.opacity = "1";
+        document.getElementById("bmg").className = "bm_off";
+        document.getElementById("bm").className = "bm_off";
+    }
+    if (document.getElementById("bmg").className === "bm_on") {
+        document.getElementById("bmg").style.opacity = "1";
+    }
+}
+
+function bdgmouseDown() {
+    "use strict";
+    if (document.getElementById("bdg").className === "bd_on") {
+        document.getElementById("bdg").style.opacity = "0";
+        document.getElementById("bdg").className = "bd_off";
+        document.getElementById("bd").className = "bd_off";
+    } else if (document.getElementById("bdg").className === "bd_off") {
+        document.getElementById("bdg").className = "bd_on";
+        document.getElementById("bd").className = "bd_on";
+        document.getElementById("bdg").style.opacity = "0";
+    }
+}
+
+function bdgmouseUp() {
+    "use strict";
+    if (document.getElementById("bdg").className === "bd_off") {
+        document.getElementById("bdg").style.opacity = "1";
+        document.getElementById("bdg").className = "bd_off";
+        document.getElementById("bd").className = "bd_off";
+    }
+    if (document.getElementById("bdg").className === "bd_on") {
+        document.getElementById("bdg").style.opacity = "1";
+    }
+}
+
+function bdgtouchstart() {
+    "use strict";
+    if (document.getElementById("bdg").className === "bd_on") {
+        document.getElementById("bdg").style.opacity = "0";
+        document.getElementById("bdg").className = "bd_off";
+        document.getElementById("bd").className = "bd_off";
+    } else if (document.getElementById("bdg").className === "bd_off") {
+        document.getElementById("bdg").className = "bd_on";
+        document.getElementById("bd").className = "bd_on";
+        document.getElementById("bdg").style.opacity = "0";
+    }
+}
+
+function bdgtouchend() {
+    "use strict";
+    if (document.getElementById("bdg").className === "bd_off") {
+        document.getElementById("bdg").style.opacity = "1";
+        document.getElementById("bdg").className = "bd_off";
+        document.getElementById("bd").className = "bd_off";
+    }
+    if (document.getElementById("bdg").className === "bd_on") {
+        document.getElementById("bdg").style.opacity = "1";
     }
 }
 
@@ -401,7 +646,6 @@ document.getElementById("text_rp_12").onclick = function () {
     }
 };
 
-var tiger = setInterval(tiger, 8000);
 
 function tiger() {
     "use strict";
@@ -1052,7 +1296,7 @@ document.getElementById("game_ancla").onclick = function () {
         document.getElementById("op_bar_g_s").className = "op_bar_g_s";
         document.getElementById("op_bar_o_s").className = "op_bar_o_phone";
         document.getElementById("op_bar_d_s").className = "op_bar_d_s";
-        document.getElementById("op_bar_a_s").className = "op_bar_a_s";
+        document.getElementById("op_bar_a_s").className = "op_bar_a_s_up";
     } else {
         if (document.getElementById("game_ancla").className === "game_ancla_g") {
             document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
