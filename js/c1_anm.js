@@ -154,6 +154,27 @@ function st_v_vb() {
                 document.getElementById("c1_lh_dock_s").style.backgroundImage = "url(media/IMG/c1/props/seagull_mr.png)";
                 document.getElementById("c1_lh_dock_s").style.animationPlayState = "running";
         }
+            if (document.getElementById("c1_ship_glow").style.display === "none") {
+        function endemo() {
+            var endemo = 0;
+            var idemo = setInterval(frame, 100);
+
+            function frame() {
+                if (endemo === 2800) {
+                    clearInterval(idemo);
+                    location.reload();
+                } else if (endemo === 2000) {
+                    endemo += 10;
+                    document.getElementById("background_demo").style.opacity = "1";
+                    document.getElementById("background_demo").style.zIndex = "100";
+                } else {
+                    endemo += 10;
+                }
+            }
+        }
+        endemo();
+    }
+
     };
     } else {
         document.getElementById("st_v_v").value = "";
@@ -171,3 +192,6 @@ document.getElementById("c1_b_c_up").onclick = function () {
         document.getElementById("st_av").style.display = "none";
     }
 };
+
+
+

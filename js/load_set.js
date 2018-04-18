@@ -1,10 +1,7 @@
-/*window.addEventListener("load", function () {
+window.addEventListener("load", function () {
     "use strict";
-    document.getElementById("main_body").removeChild(loadpage);
+    document.getElementById("main_body").removeChild(loadpage_s);
 });
-var condition = false;
-
-if (condition = true){*/
 
 document.getElementById("endincet_a").addEventListener("mousedown", mouseDown);
 document.getElementById("endincet_a").addEventListener("mouseup", mouseUp);
@@ -77,11 +74,7 @@ function mouseUp() {
         }
         progress();
     }
-    /*
-    document.addEventListener("load", function () {
-    "use strict";
-    document.getElementById("loadpage").removeChild(loadpage);
-    })*/
+   
 }
 
 
