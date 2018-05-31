@@ -36,10 +36,19 @@ function mouseUp() {
         document.getElementById("start").style.opacity = "0";
         document.getElementById("start").style.display = "none";
         document.getElementById("loadpage").style.display = "none";
+        document.getElementById("mainintro").style.display = "none";
         document.getElementById("rp_face_s").style.backgroundImage = "url(media/IMG/start/face.png)";
     }
     
-    if (document.getElementById("intro").className === "intro") {
+    if (document.getElementById("mainintro").className === "mainintro_on") {
+        document.getElementById("endincet").style.display = "block";
+        document.getElementById("start").style.opacity = "0";
+        document.getElementById("start").style.display = "none";
+        document.getElementById("loadpage").style.display = "none";
+        document.getElementById("rp_face_s").style.backgroundImage = "url(media/IMG/start/face.png)";
+    }
+    
+    if (document.getElementById("mainintro").className === "mainintro") {
         document.getElementById("endincet").style.display = "block";
         document.getElementById("start").style.opacity = "0";
         document.getElementById("loadpage").style.display = "block";
@@ -55,16 +64,26 @@ function mouseUp() {
                     document.getElementById("loadpage").style.display = "none";
                 } else if (progress === 200) {
                     document.getElementById("dp_s").style.display = "block";
-                    document.getElementById("start").style.display = "none";  
-                    document.getElementById("intro").className = "intro_on";
+                    document.getElementById("start").style.display = "none";
                     progress += 10;
                 } else if (progress === 450) {
                     document.getElementById("dp_s_2").style.display = "block";
                     document.getElementById("start").style.display = "none";
+                    document.getElementById("mainintro").className = "mainintro_on";
                     progress += 10;
                 } else if (progress === 650) {
                     document.getElementById("dp_s_3").style.display = "block";
                     document.getElementById("start").style.display = "none";
+                    document.getElementById("mi_ship_1").style.transform = "translateX(670%)";
+                    document.getElementById("mi_ship_2").style.transform = "translateX(-1100%)";
+                    progress += 10;
+                } else if (progress === 800) {
+                    document.getElementById("dp_s_3").style.display = "block";
+                    document.getElementById("start").style.display = "none";
+                    document.getElementById("mi_ship_1").style.transform = "translateX(670%)";
+                    document.getElementById("mi_ship_2").style.transform = "translateX(-1100%)";
+                    document.getElementById("mi_text_glow").style.animationDelay = "15s";
+                    document.getElementById("mi_text_glow").style.animationPlayState = "running";
                     progress += 10;
                 } else {
                     progress += 10;
@@ -79,7 +98,7 @@ function mouseUp() {
 
 
 function touchEnd() {
-   "use strict";
+    "use strict";
     if (document.getElementById("cap_1").style.display === "block") {
         document.getElementById("endincet").style.display = "block";
         document.getElementById("start").style.opacity = "0";
@@ -94,13 +113,21 @@ function touchEnd() {
         document.getElementById("start").style.opacity = "0";
         document.getElementById("start").style.display = "none";
         document.getElementById("loadpage").style.display = "none";
+        document.getElementById("mainintro").style.display = "none";
         document.getElementById("rp_face_s").style.backgroundImage = "url(media/IMG/start/face.png)";
     }
     
-    if (document.getElementById("intro").className === "intro") {
+    if (document.getElementById("mainintro").className === "mainintro_on") {
         document.getElementById("endincet").style.display = "block";
         document.getElementById("start").style.opacity = "0";
-        document.getElementById("intro").style.display = "block";
+        document.getElementById("start").style.display = "none";
+        document.getElementById("loadpage").style.display = "none";
+        document.getElementById("rp_face_s").style.backgroundImage = "url(media/IMG/start/face.png)";
+    }
+    
+    if (document.getElementById("mainintro").className === "mainintro") {
+        document.getElementById("endincet").style.display = "block";
+        document.getElementById("start").style.opacity = "0";
         document.getElementById("loadpage").style.display = "block";
         document.getElementById("rp_face_s").style.backgroundImage = "url(media/IMG/start/face.png)";
         function progress() {
@@ -115,15 +142,23 @@ function touchEnd() {
                 } else if (progress === 200) {
                     document.getElementById("dp_s").style.display = "block";
                     document.getElementById("start").style.display = "none";
-                    document.getElementById("intro").className = "intro_run";
                     progress += 10;
                 } else if (progress === 450) {
                     document.getElementById("dp_s_2").style.display = "block";
                     document.getElementById("start").style.display = "none";
+                    document.getElementById("mainintro").className = "mainintro_on";
                     progress += 10;
                 } else if (progress === 650) {
                     document.getElementById("dp_s_3").style.display = "block";
                     document.getElementById("start").style.display = "none";
+                    progress += 10;
+                } else if (progress === 800) {
+                    document.getElementById("dp_s_3").style.display = "block";
+                    document.getElementById("start").style.display = "none";
+                    document.getElementById("mi_ship_1").style.transform = "translateX(670%)";
+                    document.getElementById("mi_ship_2").style.transform = "translateX(-1100%)";
+                    document.getElementById("mi_text_glow").style.animationDelay = "10s";
+                    document.getElementById("mi_text_glow").style.animationPlayState = "running";
                     progress += 10;
                 } else {
                     progress += 10;
@@ -141,7 +176,7 @@ function touchEnd() {
 }
 
 
-document.getElementById("go").onclick = function () {
+/*document.getElementById("go").onclick = function () {
     "use strict";
     if (document.getElementById("go").className === "go") {
         document.getElementById("loadpage").style.display = "none";
@@ -151,7 +186,7 @@ document.getElementById("go").onclick = function () {
         document.getElementById("props_c1").style.display = "block";
         document.getElementById("cap_1").style.display = "block";
     }
-};
+};*/
 
 document.getElementById("op_bar_i").onclick = function () {
     "use strict";
@@ -231,7 +266,8 @@ document.getElementById("op_bar_gg").onclick = function () {
         document.getElementById("op_bar_dg").style.display = "none";
         document.getElementById("op_bar_cg").style.display = "none";
         document.getElementById("timo_s").style.display = "block";
-        document.getElementById("timo_s_2").style.display = "block";document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
+        document.getElementById("timo_s_2").style.display = "block";
+        document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
     }
 };
 document.getElementById("op_bar_o").onclick = function () {
@@ -270,7 +306,8 @@ document.getElementById("op_bar_og").onclick = function () {
         document.getElementById("op_bar_dg").style.display = "none";
         document.getElementById("op_bar_cg").style.display = "none";
         document.getElementById("timo_s").style.display = "block";
-        document.getElementById("timo_s_2").style.display = "block";document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
+        document.getElementById("timo_s_2").style.display = "block";
+        document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
     }
 };
 document.getElementById("op_bar_c").onclick = function () {
@@ -311,8 +348,8 @@ document.getElementById("op_bar_cg").onclick = function () {
         document.getElementById("op_bar_dg").style.display = "none";
         document.getElementById("op_bar_cg").style.display = "none";
         document.getElementById("timo_s").style.display = "block";
-        document.getElementById("timo_s_2").style.display = "block";document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
-        
+        document.getElementById("timo_s_2").style.display = "block";
+        document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
     }
 };
 document.getElementById("op_bar_d").onclick = function () {
@@ -423,10 +460,10 @@ document.getElementById("ob_d_idiomes_click").onclick = function () {
 
 document.getElementById("cdb").onclick = function () {
     "use strict";
-    if (document.getElementById("cdb").className === "cdb_on"){
+    if (document.getElementById("cdb").className === "cdb_on") {
         document.getElementById("cdb").className = "cdb_off";
         document.getElementById("cdbg").className = "cdb_off";
-    } else if (document.getElementById("cdb").className === "cdb_off"){
+    } else if (document.getElementById("cdb").className === "cdb_off") {
         document.getElementById("cdb").className = "cdb_on";
         document.getElementById("cdbg").className = "cdb_on";
     }
@@ -434,10 +471,10 @@ document.getElementById("cdb").onclick = function () {
 
 document.getElementById("cdbg").onclick = function () {
     "use strict";
-    if (document.getElementById("cdbg").className === "cdb_on"){
+    if (document.getElementById("cdbg").className === "cdb_on") {
         document.getElementById("cdbg").className = "cdb_off";
         document.getElementById("cdb").className = "cdb_off";
-    } else if (document.getElementById("cdbg").className === "cdb_off"){
+    } else if (document.getElementById("cdbg").className === "cdb_off") {
         document.getElementById("cdbg").className = "cdb_on";
         document.getElementById("cdb").className = "cdb_on";
     }
@@ -446,7 +483,7 @@ document.getElementById("cdbg").onclick = function () {
 
 document.getElementById("exit_icon_ops").onclick = function () {
     "use strict";
-    if (document.getElementById("exit_icon_ops").className === "exit_icon_ops"){
+    if (document.getElementById("exit_icon_ops").className === "exit_icon_ops") {
         document.getElementById("exit_icon_ops").className = "exit_icon_ops_d";
         document.getElementById("op_bar_i_m").className = "op_bar_i_m";
         document.getElementById("op_bar_i").style.display = "block";
@@ -507,85 +544,135 @@ document.getElementById("exit_icon_ops").onclick = function () {
         document.getElementById("op_bar_d_s").className = "op_bar_d_s";
         document.getElementById("game_ancla").className = "game_ancla";
         document.getElementById("op_bar_a_s").className = "op_bar_a_s";
-        }
+    }
 };
 
-//CONFI INFO//
-$("#confi_n").keyup(function(){
+//CONFI INFO TEXT SIMILAR//
+$("#confi_n").keyup(function () {
+    "use strict";
     $("#confi_gn").val(this.value);
 });
 
-$("#confi_gn").keyup(function(){
+$("#confi_gn").keyup(function () {
+    "use strict";
     $("#confi_n").val(this.value);
 });
 
-$("#confi_pc").keyup(function(){
+$("#confi_pc").keyup(function () {
+    "use strict";
     $("#confi_gpc").val(this.value);
-});$("#confi_gpc").keyup(function(){
+});
+
+$("#confi_gpc").keyup(function () {
+    "use strict";
     $("#confi_pc").val(this.value);
 });
 
-$("#confi_sc").keyup(function(){
+$("#confi_sc").keyup(function () {
+    "use strict";
     $("#confi_gsc").val(this.value);
-});$("#confi_gsc").keyup(function(){
+});
+
+$("#confi_gsc").keyup(function () {
+    "use strict";
     $("#confi_sc").val(this.value);
 });
 
-$("#confi_alies").keyup(function(){
+$("#confi_alies").keyup(function () {
+    "use strict";
     $("#confi_galies").val(this.value);
-});$("#confi_galies").keyup(function(){
+});
+
+$("#confi_galies").keyup(function () {
+    "use strict";
     $("#confi_alies").val(this.value);
 });
 
-$("#confi_mail").keyup(function(){
+$("#confi_mail").keyup(function () {
+    "use strict";
     $("#confi_gmail").val(this.value);
-});$("#confi_gmail").keyup(function(){
+});
+
+$("#confi_gmail").keyup(function () {
+    "use strict";
     $("#confi_mail").val(this.value);
 });
 
-$("#confi_ce").keyup(function(){
+$("#confi_ce").keyup(function () {
+    "use strict";
     $("#confi_gce").val(this.value);
-});$("#confi_gce").keyup(function(){
+});
+
+$("#confi_gce").keyup(function () {
+    "use strict";
     $("#confi_ce").val(this.value);
 });
 
-$("#confi_c").keyup(function(){
+$("#confi_c").keyup(function () {
+    "use strict";
     $("#confi_gc").val(this.value);
-});$("#confi_gc").keyup(function(){
+});
+
+$("#confi_gc").keyup(function () {
+    "use strict";
     $("#confi_c").val(this.value);
 });
 
-$("#confi_g").keyup(function(){
+$("#confi_g").keyup(function () {
+    "use strict";
     $("#confi_gg").val(this.value);
-});$("#confi_gg").keyup(function(){
+});
+
+$("#confi_gg").keyup(function () {
+    "use strict";
     $("#confi_g").val(this.value);
 });
 
-$("#confi_ns").keyup(function(){
+$("#confi_ns").keyup(function () {
+    "use strict";
     $("#confi_gns").val(this.value);
-});$("#confi_gns").keyup(function(){
+});
+
+$("#confi_gns").keyup(function () {
+    "use strict";
     $("#confi_ns").val(this.value);
 });
-$("#confi_contra").keyup(function(){
+
+$("#confi_contra").keyup(function () {
+    "use strict";
     $("#confi_gcontra").val(this.value);
-});$("#confi_gcontra").keyup(function(){
+});
+
+$("#confi_gcontra").keyup(function () {
+    "use strict";
     $("#confi_contra").val(this.value);
 });
-$("#confi_ov").keyup(function(){
+
+$("#confi_ov").keyup(function () {
+    "use strict";
     $("#confi_gov").val(this.value);
-});$("#confi_gov").keyup(function(){
+});
+
+$("#confi_gov").keyup(function () {
+    "use strict";
     $("#confi_ov").val(this.value);
 });
-$("#confi_op").keyup(function(){
+
+$("#confi_op").keyup(function () {
+    "use strict";
     $("#confi_gop").val(this.value);
-});$("#confi_gop").keyup(function(){
+});
+
+$("#confi_gop").keyup(function () {
+    "use strict";
     $("#confi_op").val(this.value);
 });
 
 
 
-function clearText(){
-    if (document.getElementById("confi_n").value.maxlength === 0){
-       document.getElementById("confi_n").value = "Eumo";
+function clearText() {
+    "use strict";
+    if (document.getElementById("confi_n").value.maxlength === 0) {
+        document.getElementById("confi_n").value = "Eumo";
     }
-};
+}

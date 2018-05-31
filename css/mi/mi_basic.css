@@ -1,0 +1,137 @@
+.mainintro{
+    display: none;
+}
+.mainintro_on{
+    display: block;
+}
+.mi_house{
+    background: url(../../media/IMG/Intro/Backs/Intro_buildings-01-01.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
+.mi_water{
+    background: url(../../media/IMG/Intro/Backs/water-01.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.mi_water_up{
+    background: url(../../media/IMG/Intro/Backs/water-up.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.mi_sky{
+    background: url(../../media/IMG/Intro/Backs/sky.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.mi_sky_light{
+    background: url(../../media/IMG/Intro/Backs/sky_light.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index:9;
+}
+
+.mi_lh_light{
+    background: url(../../media/IMG/start/load_lh_light.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    top: 26%;
+    left: -1.2%;
+    width: 23%;
+    height: 8%;
+    z-index: 6;
+    -webkit-animation: opacf 6s infinite linear;
+    -moz-animation: opacf 6s infinite linear;
+    animation: opacf 6s infinite linear;
+}
+
+.mi_ship_1{
+    background: url(../../media/IMG/Intro/Backs/ship_1.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 31%;
+    left: 0%;
+    width: 15%;
+    height: 13%;
+    z-index: 2;
+    -webkit-transition: all 50s linear;
+    -moz-transition: all 50s linear;
+    transition: all 50s linear;
+}
+
+.mi_ship_2{
+    background: url(../../media/IMG/Intro/Backs/ship_2.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 38%;
+    left: 110%;
+    width: 11%;
+    height: 12%;
+    z-index: 5;
+    -webkit-transition: all 30s linear;
+    -moz-transition: all 30s linear;
+    transition: all 30s linear;
+}
+
+.mi_text{
+    background: url(../../media/IMG/Intro/Text/text_1.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 9%;
+    left: 19%;
+    width: 62%;
+    height: 16%;
+    z-index: 9;
+}
+
+.mi_text_glow{
+    opacity: 0;
+    background: url(../../media/IMG/Intro/Text/text_1_glow.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 8.3%;
+    left: 18.6%;
+    width: 63%;
+    height: 17%;
+    z-index: 9;
+    animation-play-state: paused;
+    -webkit-animation: opacmi 6s infinite linear;
+    -moz-animation: opacmi 6s infinite linear;
+    animation: opacmi 6s infinite linear;
+}
+
+@keyframes opacmi {
+    0% { opacity: 0} 50% {opacity: 1}100% {opacity: 0}}
+@-moz-keyframes opacf {
+    0% { opacity: 0} 50% {opacity: 1}100% {opacity: 0}}
+@-webkit-keyframes opacf {
+    0% { opacity: 0} 50% {opacity: 1}100% {opacity: 0}}

@@ -408,6 +408,9 @@ document.getElementById("text_cub_1").onclick = function () {
         document.getElementById("background_ipm").style.display = "none";
         document.getElementById("main_theme_e1").play();
         document.getElementById("xat_auidio").play();
+        document.getElementById("sc_corda").className = "sc_corda";
+        document.getElementById("sc_ancla").className = "sc_ancla";
+        document.getElementById("sc_aura").className = "sc_aura";
     }
 };
 document.getElementById("text_joe_2").onclick = function () {
@@ -430,7 +433,6 @@ document.getElementById("text_rp_3").onclick = function () {
         document.getElementById("text_joe_4").className = "text_joe_4_mid";
         document.getElementById("JOE_start").className = "JOE_set_4";
         document.getElementById("RP_start").className = "RP_set_e3_4";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_2").remove();
         });
@@ -444,7 +446,6 @@ document.getElementById("text_joe_4").onclick = function () {
         document.getElementById("RP_start").className = "RP_set_e3";
         document.getElementById("back_img_1").style.backgroundImage = "url(media/IMG/doc_ex/Mocha_Dapper_1680.jpg)";
         document.getElementById("back_img_1").className = "back_img_1_end";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_3").remove();
         });
@@ -460,7 +461,6 @@ document.getElementById("text_rp_e2").onclick = function () {
         document.getElementById("chair").className = "chair_e3";
         document.getElementById("back_img_1").className = "back_img_1";
         document.getElementById("joe_sound").className = "joe_sound_p2";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_4").remove();
         });
@@ -474,7 +474,6 @@ document.getElementById("text_joe_5").onclick = function () {
         document.getElementById("RP_start").className = "RP_set_e3_6";
         document.getElementById("JOE_start").className = "joe_set_e3_6";
         document.getElementById("back_img_1").style.backgroundImage = "url(media/IMG/doc_ex/Os_Filhos_de_Pindorama._Cannibalism_in_Brazil_in_1557.jpg)";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_e2").remove();
         });
@@ -487,7 +486,6 @@ document.getElementById("text_joe_6").onclick = function () {
         document.getElementById("text_joe_7").className = "text_joe_7_mid";
         document.getElementById("RP_start").className = "RP_set_e3_7";
         document.getElementById("JOE_start").className = "joe_set_e3_7";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_5").remove();
         });
@@ -500,7 +498,6 @@ document.getElementById("text_joe_7").onclick = function () {
         document.getElementById("text_rp_8").className = "text_rp_8_mid";
         document.getElementById("RP_start").className = "RP_set_e3_8";
         document.getElementById("JOE_start").className = "joe_set_e3_8";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_6").remove();
         });
@@ -514,7 +511,6 @@ document.getElementById("text_rp_8").onclick = function () {
         document.getElementById("RP_start").className = "RP_set_e5";
         document.getElementById("back_img_1").className = "back_img_1_end";
         document.getElementById("cup").style.display = "block";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_7").remove();
         });
@@ -529,7 +525,6 @@ document.getElementById("text_rp_9").onclick = function () {
         document.getElementById("JOE_start").className = "joe_set_e3_9";
         document.getElementById("back_img_1").className = "back_img_1";
         document.getElementById("smoke").style.display = "block";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_8").remove();
         });
@@ -542,7 +537,6 @@ document.getElementById("text_joe_8").onclick = function () {
         document.getElementById("text_rp_10").className = "text_rp_10_mid";
         document.getElementById("RP_start").className = "RP_set_e5_10";
         document.getElementById("JOE_start").className = "joe_set_e3_10";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_9").remove();
         });
@@ -556,7 +550,6 @@ document.getElementById("text_rp_10").onclick = function () {
         document.getElementById("RP_start").className = "RP_set_e5_11";
         document.getElementById("JOE_start").className = "joe_set_e3_11";
         document.getElementById("back_img_1").style.backgroundImage = "url(media/IMG/doc_ex/back_img_3.jpg)";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_8").remove();
         });
@@ -569,7 +562,6 @@ document.getElementById("text_joe_9").onclick = function () {
         document.getElementById("text_rp_11").className = "text_rp_11_mid";
         document.getElementById("RP_start").className = "RP_set_e7";
         document.getElementById("back_img_1").className = "back_img_2_end";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_10").remove();
         });
@@ -601,7 +593,6 @@ document.getElementById("text_rp_11").onclick = function () {
         document.getElementById("back_img_1").style.backgroundPosition = "center";
         document.getElementById("back_img_1").style.backgroundImage = "url(media/IMG/doc_ex/vida_pi.jpg)";
         document.getElementById("RP_face").className = "RP_face";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_9").remove();
         });
@@ -638,7 +629,6 @@ document.getElementById("text_rp_12").onclick = function () {
         document.getElementById("text_rp_13").className = "text_rp_13_mid";
         document.getElementById("background").className = "off_back";
         document.getElementById("back_img_1").className = "back_img_1_end";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_11").remove();
             
@@ -710,7 +700,6 @@ document.getElementById("text_rp_13").onclick = function () {
         document.getElementById("RP_start").className = "RP_set_e7_4";
         document.getElementById("RP_tiger_glow").style.display = "none";
         document.getElementById("RP_face_2").className = "RP_face_2";
-        document.getElementById("xat_auidio").play();
         clearInterval(tiger);
         $(document).ready(function () {
             $("#text_rp_12").remove();
@@ -818,7 +807,6 @@ document.getElementById("text_rp_14").onclick = function () {
         document.getElementById("background").className = "off_back";
         document.getElementById("RP_start").className = "RP_set_e5_12";
         document.getElementById("JOE_start").className = "joe_set_e3_12";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_13").remove();
         });
@@ -831,7 +819,6 @@ document.getElementById("text_joe_10").onclick = function () {
         document.getElementById("text_rp_15").className = "text_rp_15_mid";
         document.getElementById("RP_start").className = "RP_set_e5_13";
         document.getElementById("JOE_start").className = "joe_set_e3_13";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_14").remove();
         });
@@ -844,7 +831,6 @@ document.getElementById("text_rp_15").onclick = function () {
         document.getElementById("text_joe_11").className = "text_joe_11_mid";
         document.getElementById("RP_start").className = "RP_set_e5_14";
         document.getElementById("JOE_start").className = "joe_set_e3_14";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_joe_10").remove();
         });
@@ -857,10 +843,6 @@ document.getElementById("text_joe_11").onclick = function () {
         document.getElementById("text_joe_12").className = "text_joe_12_mid";
         document.getElementById("RP_start").className = "RP_set_e5_15";
         document.getElementById("JOE_start").className = "joe_set_e3_15";
-        document.getElementById("window_fe").className = "window_fe";
-        document.getElementById("window_anm").className = "window_anm_down";
-        document.getElementById("window_anm_2").className = "window_anm_2_up";
-        document.getElementById("xat_auidio").play();
         $(document).ready(function () {
             $("#text_rp_15").remove();
         });
@@ -873,10 +855,29 @@ document.getElementById("text_joe_12").onclick = function () {
         document.getElementById("text_joe_12").className = "text_joe_12_end";
         document.getElementById("scene_change").style.display = "block";
         document.getElementById("scene_change").className = "scene_change_m";
-        document.getElementById("xat_auidio").play();
+        document.getElementById("sc_corda").className = "sc_corda";
+        document.getElementById("sc_ancla").className = "sc_ancla";
+        document.getElementById("sc_aura").style.display = "block";
+        document.getElementById("sc_clic_c1").className = "sc_clic_c1_on";
+        document.getElementById("sc_clic_c1").style.transitionDelay = "5s";
+        document.getElementById("sc_aura").className = "sc_aura_on";
+        document.getElementById("sc_aura").style.transitionDelay = "5s";
+        document.getElementById("scene_change").style.transitionDelay = "0s";
         $(document).ready(function () {
             $("#text_joe_11").remove();
         });
+    }
+};
+
+document.getElementById("mi_text_glow").onclick = function () {
+    "use strict";
+    if (document.getElementById("mi_text_glow").className === "mi_text_glow") {
+        document.getElementById("scene_change").style.display = "block";
+        document.getElementById("scene_change").className = "scene_change_m";
+        document.getElementById("sc_aura").className = "sc_aura_on";
+        document.getElementById("sc_aura").style.transitionDelay = "5s";
+        document.getElementById("sc_clic_mi").className = "sc_clic_mi_on"
+        document.getElementById("sc_clic_mi").style.transitionDelay = "5s";
     }
 };
 

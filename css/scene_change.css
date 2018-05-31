@@ -6,10 +6,11 @@
     height: 100%;
     position: absolute;
     z-index: 100;
-    -webkit-transition: ease-in 1.5s;
-    -moz-transition: ease-in 1.5s;
-    transition: ease-in 1.5s;
-    transform: translateX(-100%);
+    -webkit-transition: ease-in-out 4s;
+    -moz-transition: ease-in-out 4s;
+    transition: ease-in-out 4s;
+    z-index: -10;
+    opacity: 0;
 }
 
 .scene_change_m {
@@ -20,9 +21,9 @@
     height: 100%;
     position: absolute;
     z-index: 100;
-    -webkit-transition: ease-in-out 4s;
-    -moz-transition: ease-in-out 4s;
-    transition: ease-in-out 4s;
+    -webkit-transition: ease-in-out 5s;
+    -moz-transition: ease-in-out 5s;
+    transition: ease-in-out 5s;
 }
 
 .sc_ancla {
@@ -48,12 +49,12 @@
     left: 34%;
     position: absolute;
     transition: ease-in-out  4s;
-    transform: rotateZ(180deg);
+    transform: rotateZ(360deg);
     transform-origin: center;
 }
 
 
-.sc_aura {
+.sc_aura_on {
     background: url(../media/IMG/SC/ancla_glow_sc.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -62,14 +63,27 @@
     left: 32.5%;
     height: 54%;
     position: absolute;
+    transition: all 0s linear;
     -webkit-animation: sc_glow 3s infinite linear;
     -moz-animation: sc_glow 3s infinite linear;
     animation: sc_glow 3s infinite linear;
+    opacity: 0;
 }
 
 @-webkit-keyframes sc_glow{0%{opacity: 0}50%{opacity: 1}100%{opacity: 0}}
 @-moz-keyframes sc_glow{0%{opacity: 0}50%{opacity: 1}100%{opacity: 0}}
 @keyframes sc_glow{0%{opacity: 0}50%{opacity: 1}100%{opacity: 0}}
+
+.sc_aura {
+    background: url(../media/IMG/SC/ancla_glow_sc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0%;
+    top: 22%;
+    left: 32.5%;
+    height: 0%;
+    position: absolute;
+}
 
 
 .sc_corda {
@@ -108,6 +122,16 @@
 }
 
 .sc_clic_c1 {
+    display: none;
+    top: 16%;
+    left: 26%;
+    width: 48%;
+    height: 65%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sc_clic_c1_on {
     display: block;
     top: 16%;
     left: 26%;
@@ -115,6 +139,27 @@
     height: 65%;
     position: absolute;
     border-radius: 50%;
+    transition: all 0s linear;
+}
+
+.sc_clic_mi{
+    top: 100%;
+    left: 26%;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 10s linear;
+}
+
+.sc_clic_mi_on{
+    top: 16%;
+    left: 26%;
+    width: 48%;
+    height: 65%;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0s linear;
 }
 
 .background_demo {

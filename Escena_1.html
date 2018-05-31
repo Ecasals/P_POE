@@ -18,6 +18,7 @@
     <link rel=stylesheet href=css/start.css>
     <link rel=stylesheet href=css/scene_change.css>
     <link rel=stylesheet href=css/loadingpage.css>
+    <link rel=stylesheet href=css/mi/mi_basic.css>
     <link rel="icon" href="data:,"> </head>
 
 <body id=main_body>
@@ -32,7 +33,7 @@
         <div id="dp_s"></div>
         <div id="dp_s_2"></div>
         <div id="dp_s_3"></div>
-        <div id="go" class="go"></div>
+        <!--<div id="go" class="go"></div>-->
     </div>
     <div id="start">
         <div id="timo_s"></div>
@@ -65,13 +66,13 @@
                 <div id="bd" class="bd_on"></div>
                 </div>
                 <div id="s_confi">
-                <input id="confi_n" class="confi_n" type="text" onfocus="this.value=''" value="Eumo" maxlength="10" onblur="clearText()" >
-                <input id="confi_pc" class="confi_pc" type="text" onfocus="this.value=''" value="Disseny" maxlength="15">
-                <input id="confi_sc" class="confi_sc" type="text" onfocus="this.value=''" value="Comunicació"maxlength="15">
-                <input id="confi_alies" class="confi_alies" type="text" onfocus="this.value=''" value="Eumo_DC" maxlength="10">
-                <input id="confi_mail" class="confi_mail" type="text" onfocus="this.value=''" value="info@emuodc.cat" maxlength="25">
-                <input id="confi_ce" class="confi_ce" type="text" onfocus="this.value=''" value="Universitat de Vic" maxlength="50">
-                <select id="confi_c" class="confi_c" type="text" value="Curs" maxlength="15">
+                <input id="confi_n" class="confi_n" type="text" placeholder="Eumo" maxlength="10" onblur="clearText()" >
+                <input id="confi_pc" class="confi_pc" type="text" placeholder="Disseny" maxlength="15">
+                <input id="confi_sc" class="confi_sc" type="text" placeholder="Comunicació"maxlength="15">
+                <input id="confi_alies" class="confi_alies" type="text" placeholder="Eumo_DC" maxlength="10">
+                <input id="confi_mail" class="confi_mail" type="text" placeholder="info@emuodc.cat" maxlength="25">
+                <input id="confi_ce" class="confi_ce" type="text" placeholder="Universitat de Vic" maxlength="50">
+                <select id="confi_c" class="confi_c" type="text" placeholder="Curs" maxlength="15">
                         <option value="1r d'ESO">1r d'ESO
                         <option value="2n d'ESO">2n d'ESO
                         <option value="3r d'ESO">3r d'ESO
@@ -80,11 +81,11 @@
                         <option value="2n de Batxillerat">2n de Batxillerat
                         <option value="Altres">Altres
                     </select>
-                <input id="confi_g" class="confi_g" type="text" onfocus="this.value=''" value="A" maxlength="10">
-                <input id="confi_ns" class="confi_ns" type="text" onfocus="this.value=''" value="Grumets_04" maxlength="10">
-                <input id="confi_contra" class="confi_contra" type="password" onfocus="this.value=''" value="eumoopin" maxlength="50">
-                <textarea id="confi_ov" class="confi_ov"  type="text" onfocus="this.value=''" maxlength="150" >Escriu aquí...</textarea>
-                <textarea id="confi_op" class="confi_op" type="text" onfocus="this.value=''" maxlength="90" cols="40" rows="5">Proposta debat...</textarea>
+                <input id="confi_g" class="confi_g" type="text" placeholder="A" maxlength="10">
+                <input id="confi_ns" class="confi_ns" type="text" placeholder="Grumets_04" maxlength="10">
+                <input id="confi_contra" class="confi_contra" type="password" placeholder="eumoopin" maxlength="50">
+                <textarea id="confi_ov" class="confi_ov"  type="text" placeholder="Escriu aquí..." maxlength="150"></textarea>
+                <textarea id="confi_op" class="confi_op" type="text" placeholder="Proposta debat..." homaxlength="90" cols="40" rows="5"></textarea>
                 </div>
                 </div>
             <div id="op_bar_d" class="op_bar_d"></div>
@@ -107,6 +108,20 @@
         <div id="sc_aura" class="sc_aura"></div>
         <div id="sc_corda" class="sc_corda"></div>
         <div id="sc_clic_c1" class="sc_clic_c1"></div>
+        <div id="sc_clic_mi" class="sc_clic_mi"></div>
+    </div>
+    <div id="mainintro" class="mainintro">
+        <div id="mi_house" class="mi_house" ></div>
+        <div id="mi_sky" class="mi_sky" ></div>
+        <div id="mi_sky_light" class="mi_sky_light" ></div>
+        <div id="mi_lh_light" class="mi_lh_light" ></div>
+        <div id="mi_water" class="mi_water" ></div>
+        <div id="mi_water_up" class="mi_water_up" ></div>
+        <div id="mi_ship_1" class="mi_ship_1" ></div>
+        <div id="mi_ship_2" class="mi_ship_2" ></div>
+        <div id="mi_text" class="mi_text" ></div>
+        <div id="mi_text_glow" class="mi_text_glow" ></div>
+        <div id="mi_rp" class="mi_rp" ></div>
     </div>
     <div id="intro" class="intro">
         <div id=background class=off_back></div>
@@ -377,18 +392,17 @@
                 <div id="bli" class="bli"></div>
                 <div id="blf" class="blf"></div>
                 <div id="cdbg" class="cdb_on"></div>
-                <div id="cdbg" class="cdb_on"></div>
                 <div id="bag" class="ba_on"></div>
                 <div id="bmg" class="bm_on"></div>
                 <div id="bdg" class="bd_on"></div>
             </div>
         <div id="s_confi_g">
-                <input id="confi_gn" class="confi_n" type="text" onfocus="this.value=''" value="Eumo" maxlength="10">
-                <input id="confi_gpc" class="confi_pc" type="text" onfocus="this.value=''" value="Disseny" maxlength="15">
-                <input id="confi_gsc" class="confi_sc" type="text" onfocus="this.value=''" value="Comunicació"maxlength="15">
-                <input id="confi_galies" class="confi_alies" type="text" onfocus="this.value=''" value="Eumo_DC" maxlength="10">
-                <input id="confi_gmail" class="confi_mail" type="text" onfocus="this.value=''" value="info@emuodc.cat" maxlength="25">
-                <input id="confi_gce" class="confi_ce" type="text" onfocus="this.value=''" value="Universitat de Vic" maxlength="50">
+                <input id="confi_gn" class="confi_n" type="text" maxlength="10" placeholder="Eumo">
+                <input id="confi_gpc" class="confi_pc" type="text" placeholder="Disseny" maxlength="15">
+                <input id="confi_gsc" class="confi_sc" type="text" placeholder="Comunicació"maxlength="15">
+                <input id="confi_galies" class="confi_alies" type="text"  placeholder="Eumo_DC" maxlength="10">
+                <input id="confi_gmail" class="confi_mail" type="text"  placeholder="info@emuodc.cat" maxlength="25">
+                <input id="confi_gce" class="confi_ce" type="text"  value="Universitat de Vic" maxlength="50">
                 <select id="confi_gc" class="confi_c" type="text" value="Curs" maxlength="15">
                         <option value="1r d'ESO">1r d'ESO
                         <option value="2n d'ESO">2n d'ESO
@@ -398,11 +412,11 @@
                         <option value="2n de Batxillerat">2n de Batxillerat
                         <option value="Altres">Altres
                     </select>
-                <input id="confi_gg" class="confi_g" type="text" onfocus="this.value=''" value="A" maxlength="10">
-                <input id="confi_gns" class="confi_ns" type="text" onfocus="this.value=''" value="Grumets_04" maxlength="10">
-                <input id="confi_gcontra" class="confi_contra" type="password" onfocus="this.value=''" value="eumoopin" maxlength="50">
-                <input id="confi_gov" class="confi_ov"  type="text" onfocus="this.value=''" value="Escriu aquí..."> 
-                <input id="confi_gop" class="confi_op" type="text" onfocus="this.value=''" value="Proposta debat..."  size="120">
+                <input id="confi_gg" class="confi_g" type="text" placeholder="A" maxlength="10">
+                <input id="confi_gns" class="confi_ns" type="text" placeholder="Grumets_04" maxlength="10">
+                <input id="confi_gcontra" class="confi_contra" type="password"  placeholder="eumoopin" maxlength="50">
+                <textarea id="confi_gov" class="confi_ov"  type="text" maxlength="150" placeholder="Escriu aquí..."></textarea>
+                <textarea id="confi_gop" class="confi_op" type="text" maxlength="90" cols="40" placeholder="Proposta debat..." rows="5"></textarea>
                 </div>
                 </div>
     </div>
