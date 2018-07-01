@@ -26,4 +26,6 @@ document.getElementById("sc_clic_mi").onclick = function () {
         document.getElementById("mainintro").style.display = "none";
         document.getElementById("intro").className = "intro_on";
         document.getElementById("op_bar_a_s").style.backgroundImage = "url(media/IMG/start/ancla_pag.png)";
+        document.getElementById("i_hand").style.animationDelay = "20s";
+        document.getElementById("i_hand").style.animationPlayState = "running";
 };

@@ -411,6 +411,7 @@ document.getElementById("text_cub_1").onclick = function () {
         document.getElementById("sc_corda").className = "sc_corda";
         document.getElementById("sc_ancla").className = "sc_ancla";
         document.getElementById("sc_aura").className = "sc_aura";
+        document.getElementById("i_hand").style.display = "none";
     }
 };
 document.getElementById("text_joe_2").onclick = function () {

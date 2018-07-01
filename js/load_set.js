@@ -62,6 +62,8 @@ function mouseUp() {
                 if (progress === 1000) {
                     clearInterval(id);
                     document.getElementById("loadpage").style.display = "none";
+                    document.getElementById("mi_hand").style.animationDelay = "20s";
+                    document.getElementById("mi_hand").style.animationPlayState = "running";
                 } else if (progress === 200) {
                     document.getElementById("dp_s").style.display = "block";
                     document.getElementById("start").style.display = "none";
@@ -139,6 +141,8 @@ function touchEnd() {
                 if (progress === 1000) {
                     clearInterval(id);
                     document.getElementById("loadpage").style.display = "none";
+                    document.getElementById("mi_hand").style.animationDelay = "20s";
+                    document.getElementById("mi_hand").style.animationPlayState = "running";
                 } else if (progress === 200) {
                     document.getElementById("dp_s").style.display = "block";
                     document.getElementById("start").style.display = "none";

@@ -1149,3 +1149,46 @@ p {
     border-top-left-radius: 140px;
     border-top-right-radius: 140px;
 }
+
+.i_hand{
+    opacity: 0;
+    background: url(../../media/IMG/Intro/Text/maguia.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 67%;
+    left: 45%;
+    width: 13%;
+    height: 17%;
+    z-index: 9;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    -webkit-animation: ihand 10s  linear;
+    -moz-animation: ihand 10s  linear;
+    animation: ihand 10s  linear;
+}
+
+@keyframes ihand {
+    0%  {opacity: 0; top: 67%; left: 45%; transform: rotateX(0deg)}
+    30% {opacity: 1;top: 67%; left: 36%; transform: rotateX(0deg)}
+    35% {opacity: 1;top: 67%; left: 36%; transform: rotateX(-20deg)} 
+    40% {opacity: 1;top: 67%; left: 36%; transform: rotateX(0deg)}
+    45% {opacity: 0;top: 67%; left: 36%; transform: rotateX(0deg)}
+    70% {opacity: 0; top: 67%; left: 40%; transform: rotateX(0deg)}
+    100% {opacity: 0; top: 67%; left: 45%; transform: rotateX(0deg)}}
+@-moz-keyframes ihand {
+   0%  {opacity: 0; top: 67%; left: 45%; transform: rotateX(0deg)}
+    30% {opacity: 1;top: 67%; left: 36%; transform: rotateX(0deg)}
+    35% {opacity: 1;top: 67%; left: 36%; transform: rotateX(-20deg)} 
+    40% {opacity: 1;top: 67%; left: 36%; transform: rotateX(0deg)}
+    45% {opacity: 0;top: 67%; left: 36%; transform: rotateX(0deg)}
+    70% {opacity: 0; top: 67%; left: 40%; transform: rotateX(0deg)}
+    100% {opacity: 0; top: 67%; left: 45%; transform: rotateX(0deg)}}
+@-webkit-keyframes ihand {
+   0%  {opacity: 0; top: 67%; left: 45%; transform: rotateX(0deg)}
+    30% {opacity: 1;top: 67%; left: 36%; transform: rotateX(0deg)}
+    35% {opacity: 1;top: 67%; left: 36%; transform: rotateX(-20deg)} 
+    40% {opacity: 1;top: 67%; left: 36%; transform: rotateX(0deg)}
+    45% {opacity: 0;top: 67%; left: 36%; transform: rotateX(0deg)}
+    70% {opacity: 0; top: 67%; left: 40%; transform: rotateX(0deg)}
+    100% {opacity: 0; top: 67%; left: 45%; transform: rotateX(0deg)}}

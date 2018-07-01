@@ -80,9 +80,9 @@
     width: 15%;
     height: 13%;
     z-index: 2;
-    -webkit-transition: all 50s linear;
-    -moz-transition: all 50s linear;
-    transition: all 50s linear;
+    -webkit-transition: all 80s linear;
+    -moz-transition: all 80s linear;
+    transition: all 80s linear;
 }
 
 .mi_ship_2{
@@ -95,9 +95,9 @@
     width: 11%;
     height: 12%;
     z-index: 5;
-    -webkit-transition: all 30s linear;
-    -moz-transition: all 30s linear;
-    transition: all 30s linear;
+    -webkit-transition: all 60s linear;
+    -moz-transition: all 60s linear;
+    transition: all 60s linear;
 }
 
 .mi_text{
@@ -135,3 +135,46 @@
     0% { opacity: 0} 50% {opacity: 1}100% {opacity: 0}}
 @-webkit-keyframes opacf {
     0% { opacity: 0} 50% {opacity: 1}100% {opacity: 0}}
+
+.mi_hand{
+    opacity: 0;
+    background: url(../../media/IMG/Intro/Text/maguia.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 67%;
+    left: 82%;
+    width: 13%;
+    height: 17%;
+    z-index: 9;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    -webkit-animation: mihand 10s  linear;
+    -moz-animation: mihand 10s  linear;
+    animation: mihand 10s  linear;
+}
+
+@keyframes mihand {
+    0%  {opacity: 0; top: 67%; left: 82%; transform: rotateX(0deg)}
+    30% {opacity: 1;top: 18%; left: 72%; transform: rotateX(0deg)}
+    35% {opacity: 1;top: 18%; left: 72%; transform: rotateX(-20deg)} 
+    40% {opacity: 1;top: 18%; left: 72%; transform: rotateX(0deg)}
+    45% {opacity: 0;top: 18%; left: 72%; transform: rotateX(0deg)}
+    70% {opacity: 0; top: 40%; left: 77%; transform: rotateX(0deg)}
+    100% {opacity: 0; top: 67%; left: 82%; transform: rotateX(0deg)}}
+@-moz-keyframes mihand {
+   0%  {opacity: 0; top: 67%; left: 82%; transform: rotateX(0deg)}
+    30% {opacity: 1;top: 18%; left: 72%; transform: rotateX(0deg)}
+    35% {opacity: 1;top: 18%; left: 72%; transform: rotateX(-20deg)} 
+    40% {opacity: 1;top: 18%; left: 72%; transform: rotateX(0deg)}
+    45% {opacity: 0;top: 18%; left: 72%; transform: rotateX(0deg)}
+    70% {opacity: 0; top: 40%; left: 77%; transform: rotateX(0deg)}
+    100% {opacity: 0; top: 67%; left: 82%; transform: rotateX(0deg)}}
+@-webkit-keyframes mihand {
+   0%  {opacity: 0; top: 67%; left: 82%; transform: rotateX(0deg)}
+    30% {opacity: 1;top: 18%; left: 72%; transform: rotateX(0deg)}
+    35% {opacity: 1;top: 18%; left: 72%; transform: rotateX(-20deg)} 
+    40% {opacity: 1;top: 18%; left: 72%; transform: rotateX(0deg)}
+    45% {opacity: 0;top: 18%; left: 72%; transform: rotateX(0deg)}
+    70% {opacity: 0; top: 40%; left: 77%; transform: rotateX(0deg)}
+    100% {opacity: 0; top: 67%; left: 82%; transform: rotateX(0deg)}}
